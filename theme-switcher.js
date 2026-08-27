@@ -12,6 +12,7 @@
 
   window.addEventListener("DOMContentLoaded", function () {
     const options = document.querySelectorAll("[data-theme-option]");
+    const select = document.querySelector(".themeSelect");
     const logo = document.querySelector(".brandLogo");
 
     function setTheme(theme) {
@@ -24,12 +25,18 @@
       options.forEach(function (option) {
         option.setAttribute("aria-pressed", String(option.dataset.themeOption === theme));
       });
+
+      select.value = theme;
     }
 
     options.forEach(function (option) {
       option.addEventListener("click", function () {
         setTheme(option.dataset.themeOption);
       });
+    });
+
+    select.addEventListener("change", function () {
+      setTheme(select.value);
     });
 
     setTheme(initialTheme);

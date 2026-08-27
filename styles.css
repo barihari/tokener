@@ -1,20 +1,19 @@
 
 /* Design Tokens */
 @import '/tokens/space.css';
-@import '/tokens/font.css';
+@import '/tokens/font.css?v=5';
 @import '/tokens/textstyle.css';
 @import '/tokens/shadow.css';
-@import '/themes/themes.css';
+@import '/themes/themes.css?v=5';
 
 /* Components */
 @import '/components/button.css';
-@import '/components/logo.css';
+@import '/components/logo.css?v=3';
 @import '/components/avatar.css';
 @import '/components/input.css';
 @import '/components/panel-sidebar.css';
 @import '/components/panel-main.css';
 @import '/components/panel-details.css';
-@import '/components/theme-switcher.css';
 
 
 /* ------------------- Global --------------------------*/
@@ -68,12 +67,26 @@ body {
         grid-template-columns: 1fr;
     }
 
+    main {
+        padding-top: 44px;
+        padding-bottom: var(--layout-supporting-gap);
+    }
+
+    .emails {
+        margin-bottom: 0;
+    }
+
+    .formGrid {
+        display: none;
+    }
+
     .sidebar {
         display: none;
     }
 
     .detailsPanel {
         width: 100%;
+        border-left: 0;
     }
 
     body {

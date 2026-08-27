@@ -12,7 +12,7 @@
     background-color: var(--surface-light);                                  /*<--- Design Token Alias */
     color: var(--text-body);                                                 /*<--- Design Token Alias */
     align-items: center;
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--layout-card-gap);
 }
 
 .userCardAvatar {
@@ -39,7 +39,7 @@
     border-radius: var(--surface-radius);
     align-items: center;                                                
     color: var(--text-light);                                               /*<--- Design Token Alias */
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--layout-card-gap);
 }
 
 .highlightCardAvatar {
@@ -83,7 +83,7 @@
     background-color: var(--surface-light);                                     /*<--- Design Token Alias */
     color:var(--text-body);                                                     /*<--- Design Token Alias */
     align-items: center;
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--layout-card-gap);
 }
 
 .chartCard .chart:first-child {
@@ -147,17 +147,26 @@
 }
 
 .detailsTitle {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--details-title-gap);
 }
 
 .detailsBlurb {
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--details-action-gap);
     color: var(--text-subtle);                                                    /*<--- Design Token Alias */
 }
 
 :root:not([data-theme]) .detailsBlurb,
-:root[data-theme="bankrate"] .detailsBlurb,
+:root[data-theme="bankrate"] .detailsBlurb {
+    font-size: 18px;
+    line-height: 28px;
+}
+
 :root[data-theme="capital-one"] .detailsBlurb {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+:root[data-theme="sage"] .detailsBlurb {
     font-size: 18px;
     line-height: 28px;
 }

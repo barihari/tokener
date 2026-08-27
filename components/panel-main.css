@@ -4,36 +4,43 @@ main {
   padding: var(--space-8);
 }
 
+main > h1 {
+  margin-bottom: var(--layout-heading-gap);
+}
+
 /* ------------------- Tab --------------------------*/
 
 
 .tabs {
   display: flex;
-  margin-bottom: var(--space-5);
+  gap: var(--tab-item-gap);
+  margin-bottom: var(--layout-tab-gap);
+  font-family: var(--tab-font-family);
+  font-size: var(--tab-font-size);
+  line-height: var(--tab-line-height);
 }
 
 .tab {
-  border-bottom: 2px solid transparent;  
-  padding-bottom: var(--space-1);
+  border-bottom: var(--tab-indicator-width) solid transparent;
+  padding-bottom: var(--tab-padding-bottom);
+  color: var(--tab-color);
+  font-weight: var(--tab-font-weight);
 }
 
 .tab:not(.active) {
   cursor: pointer;
-  color: var(--text-subtle);                                     /*<--- Design Token Alias */
-}
-
-.tab+.tab {
-  margin-left: var(--space-5);
 }
 
 .tab.active {
-  border-color: var(--text-body);                                /*<--- Design Token Alias */
+  border-color: var(--tab-indicator-color);
+  color: var(--tab-active-color);
+  font-weight: var(--tab-active-font-weight);
 }
 
 /* ------------------- Search --------------------------*/
 
 .searchSection {
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--layout-section-gap);
 }
 
 
@@ -51,12 +58,18 @@ main {
   grid-gap: var(--space-5);
   padding: var(--space-5);
   border-radius: var(--surface-radius);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--layout-section-gap);
   background-color: var(--surface-neutral-faint);                /*<--- Design Token Alias */
 }
 
 .postAuthor {
   padding-top: var(--space-4);
+}
+
+:root:not([data-theme]) .postAuthor,
+:root[data-theme="bankrate"] .postAuthor {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 :root[data-theme="sage"] .postAuthor {
@@ -76,10 +89,17 @@ main {
 
 .postMain a {
   color: var(--text-link);                                       /*<--- Design Token Alias */
+  font-weight: var(--link-font-weight);
+  text-decoration-color: currentColor;
+  text-decoration-line: var(--link-text-decoration);
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: var(--link-underline-thickness);
+  text-underline-offset: var(--link-underline-offset);
 }
 
 .postMain a:hover {
   color: var(--text-link-hover);                                 /*<--- Design Token Alias */
+  text-decoration-line: underline;
 }
 
 
@@ -88,13 +108,18 @@ main {
 
 .emails {
   border-top: 1px solid var(--grid-border-faint);                /*<--- Design Token Alias */
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--layout-form-gap);
+  font-family: var(--list-font-family);
+  font-size: var(--list-font-size);
+  font-weight: 400;
+  line-height: var(--list-line-height);
 }
 
 .email {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  padding: var(--space-4) 0;
+  column-gap: var(--list-column-gap);
+  padding: var(--list-row-padding-y) 0;
   border-bottom: 1px solid var(--grid-border-faint);             /*<--- Design Token Alias */
   min-width: 0;
   min-width: 100%;
@@ -102,10 +127,6 @@ main {
 
 .email:hover {
   background-color: var(--grid-row-hover);                       /*<--- Design Token Alias */
-}
-
-.listCell+.listCell {
-  padding-left: var(--space-5);
 }
 
 .listCell {
@@ -117,6 +138,11 @@ main {
   color: var(--text-body)                                        /*<--- Design Token Alias */
 }
 
+.listCell:first-child {
+  font-family: var(--list-label-font-family);
+  font-weight: var(--list-label-font-weight);
+}
+
 
 /* ------------------- Form --------------------------*/
 
@@ -125,5 +151,5 @@ main {
   grid-template-columns: 1fr 1fr auto;
   grid-gap: var(--space-3);
   align-items: end;
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--layout-supporting-gap);
 }

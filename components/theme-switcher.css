@@ -1,39 +1,44 @@
 .themeSwitcher {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
+  right: var(--space-8);
+  bottom: 75px;
+  left: auto;
+  width: max-content;
+  max-width: calc(100vw - 24px);
   z-index: 20;
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid rgba(21, 21, 25, 0.14);
-  border-radius: 8px;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid rgba(21, 21, 25, 0.08);
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 8px 30px rgba(21, 21, 25, 0.16);
+  box-shadow: 0 4px 10px -5px rgba(21, 21, 25, 0.08);
   font-family: "Source Sans 3", system-ui, sans-serif;
+  transform: none;
   backdrop-filter: blur(12px);
 }
 
 .themeSwitcherLabel {
-  padding: 0 8px;
+  padding: 0 10px;
   color: #666779;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .themeOption {
-  min-height: 34px;
-  padding: 7px 10px;
+  width: 104px;
+  min-height: 48px;
+  padding: 11px 14px;
   border: 0;
   border-radius: 5px;
   background: transparent;
   color: #3f404b;
   cursor: pointer;
   font: inherit;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -52,19 +57,78 @@
   outline-offset: 2px;
 }
 
-@media (max-width: 600px) {
+.mobileThemeLabel,
+.themeSelect {
+  display: none;
+}
+
+@media (max-width: 1100px) {
   .themeSwitcher {
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    justify-content: center;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    max-width: calc(100vw - 32px);
+    gap: 4px;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    backdrop-filter: none;
   }
 
-  .themeSwitcherLabel {
+  .themeSwitcher:hover,
+  .themeSwitcher:focus-within {
+    background: #f1f2f4;
+  }
+
+  .themeSwitcher::after {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    width: 8px;
+    height: 8px;
+    border-right: 1.5px solid #3f404b;
+    border-bottom: 1.5px solid #3f404b;
+    content: "";
+    pointer-events: none;
+    transform: translateY(-70%) rotate(45deg);
+  }
+
+  .themeSwitcherLabel,
+  .themeOption {
     display: none;
   }
 
-  .themeOption {
-    flex: 1;
+  .mobileThemeLabel {
+    display: inline;
+    color: #666779;
+    font-size: 14.5px;
+    font-weight: 500;
+  }
+
+  .themeSelect {
+    display: block;
+    width: auto;
+    min-height: 36px;
+    padding: 0 24px 0 0;
+    border: 0;
+    border-radius: 9px;
+    appearance: none;
+    background: transparent;
+    color: #3f404b;
+    cursor: pointer;
+    font: inherit;
+    font-size: 14.5px;
+    font-weight: 500;
+  }
+
+  .themeSelect:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--brand-brand) 35%, transparent);
+    outline-offset: 2px;
   }
 }

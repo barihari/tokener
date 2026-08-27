@@ -7,8 +7,9 @@
 
     <title>Design Tokens Demo</title>
 
-    <script src="theme-switcher.js"></script>
-    <link href="styles.css" rel="stylesheet">
+    <script src="theme-switcher.js?v=2"></script>
+    <link href="styles.css?v=13" rel="stylesheet">
+    <link href="components/theme-switcher.css?v=19" rel="stylesheet">
 
 </head>
 
@@ -36,9 +37,11 @@
                 </div>
                 <div class="postMain">
                     <div class="postAuthor context">Set a financial goal</div>
-                    <div class="postContent text-m">Online lenders who specialize in personal loans are becoming more
-                        common; they hold nearly half of all personal loans.</div>
-                    <div class="postDate text-s">Recent data from <a class="link" href="#">Experian</a></div>
+                    <div class="postContent text-m">Among U.S. adults, 45% have paid off debt they once considered
+                        unmanageable, while 23% have reached goals like saving or investing.</div>
+                    <div class="postDate text-s">Recent data from <a class="link"
+                            href="https://www.experian.com/blogs/ask-experian/experian-debt-relief-initiative/">Experian</a>
+                    </div>
                 </div>
             </div>
             <div class="emails text-s">
@@ -117,6 +120,12 @@
         <button class="themeOption" type="button" data-theme-option="bankrate" aria-pressed="true">Bankrate</button>
         <button class="themeOption" type="button" data-theme-option="capital-one" aria-pressed="false">Capital One</button>
         <button class="themeOption" type="button" data-theme-option="sage" aria-pressed="false">Sage</button>
+        <span class="mobileThemeLabel" aria-hidden="true">Theme:</span>
+        <select class="themeSelect" aria-label="Choose a brand theme">
+            <option value="bankrate">Bankrate</option>
+            <option value="capital-one">Capital One</option>
+            <option value="sage">Sage</option>
+        </select>
     </div>
 </body>
 
