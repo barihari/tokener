@@ -16,7 +16,6 @@ Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 Brand colors, logos, and typography are defined in `themes/themes.css`. The switcher stores the selected theme in the browser so it persists after refresh.
 
-Source Sans 3 is bundled locally under the SIL Open Font License.
+Open-source fonts are bundled in `assets/fonts`, with each license stored beside its font family.
 
 [Original Figma file](https://www.figma.com/file/yF81gk6UJP6VA8WYa8sJGl/Design-Tokens-Test?node-id=4%3A363)
-

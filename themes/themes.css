@@ -206,12 +206,12 @@
   --text-link: #285431;
   --text-link-hover: #3f7a48;
   --text-subtle: #59695d;
-  --font-body: "Source Sans 3", system-ui, sans-serif;
-  --font-label: "Source Sans 3", system-ui, sans-serif;
-  --font-title: Georgia, "Times New Roman", serif;
+  --font-body: "Geist", system-ui, sans-serif;
+  --font-label: "DM Sans", system-ui, sans-serif;
+  --font-title: "Libre Baskerville", Georgia, serif;
   --font-weight-body: 400;
   --font-weight-emphasis: 600;
   --font-weight-label: 600;
   --font-weight-context: 700;
-  --font-weight-title: 400;
+  --font-weight-title: 700;
 }
