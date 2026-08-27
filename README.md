@@ -1,13 +1,22 @@
-# tokener
+# Tokener
 
-## Installation
+A static design-token demo with switchable Bankrate, Capital One, and Sage Mortgage themes.
 
-You can install the Specify CLI via Yarn:
+## Run locally
 
-`yarn add --dev @specifyapp/cli`
+From the project directory:
 
-[Specify Documentation](https://specifyapp.com/developers/cli)
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-[Figma File](https://www.figma.com/file/yF81gk6UJP6VA8WYa8sJGl/Design-Tokens-Test?node-id=4%3A363)
+Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
+## Themes
+
+Brand colors, logos, and typography are defined in `themes/themes.css`. The switcher stores the selected theme in the browser so it persists after refresh.
+
+Source Sans 3 is bundled locally under the SIL Open Font License.
+
+[Original Figma file](https://www.figma.com/file/yF81gk6UJP6VA8WYa8sJGl/Design-Tokens-Test?node-id=4%3A363)
 

@@ -1,9 +1,0 @@
-:root {
-  /* DURATION */
-  --duration-fast: 400ms;
-  --duration-faster: 200ms;
-  --duration-fastest: 100ms;
-  --duration-slow: 600ms;
-  --duration-slower: 800ms;
-  --duration-slowest: 1s;
-}

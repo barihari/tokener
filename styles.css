@@ -1,12 +1,9 @@
 
 /* Design Tokens */
-@import '/tokens/color.css';
 @import '/tokens/space.css';
 @import '/tokens/font.css';
 @import '/tokens/textstyle.css';
 @import '/tokens/shadow.css';
-@import '/assets/images.css';
-@import '/assets/icons.css';
 @import '/themes/themes.css';
 
 /* Components */
@@ -93,5 +90,4 @@ body {
 }
 
 /* ------------------- Utilities --------------------------*/
-
 

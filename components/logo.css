@@ -1,15 +1,5 @@
 /* ------------------- Logo --------------------------*/
 
-.logo {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 100%;
-  background-color: var(--brand-brand);                                /*<--- Design Token Alias */
-  margin-bottom: var(--space-7);
-}
-
-
-
 .brandLogo {
   background-image: var(--brand-logo);
   background-position: left center;
