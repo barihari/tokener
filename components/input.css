@@ -1,13 +1,15 @@
 /* ------------------- Input --------------------------*/
 
   input[type=text], input[type=password]  {
-    padding: calc(var(--textFrameY) - var(--fieldBorderWidth)) var(--textFrameY);
+    height: var(--field-height);
+    padding: 0 var(--field-padding-x);
     width: 100%;
     font: inherit;
     color: inherit;
     background-color: transparent; 
     box-sizing: border-box;
     border: var(--fieldBorderWidth) solid var(--grid-border-subtle);               /*<--- Design Token Alias */
+    border-radius: var(--field-radius);
     outline: none;
     margin-top: var(--space-1);
     -webkit-transition: 0.5s;

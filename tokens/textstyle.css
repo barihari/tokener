@@ -1,10 +1,10 @@
 .context {
-  font-family: var(--font-label);
-  font-weight: var(--font-weight-context);
-  font-size: 14px;
-  line-height: 0.86;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-family: var(--eyebrow-font-family);
+  font-weight: var(--eyebrow-font-weight);
+  font-size: var(--eyebrow-font-size);
+  line-height: var(--eyebrow-line-height);
+  letter-spacing: var(--eyebrow-letter-spacing);
+  text-transform: var(--eyebrow-text-transform);
 }
 
 .label-l {

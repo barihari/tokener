@@ -1,10 +1,29 @@
 /* ------------------- Button --------------------------*/
 
 .button {
-    padding: var(--textFrameY) var(--textFrameX);
-    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--button-height);
+    padding: 0 var(--button-padding-x);
+    border-radius: var(--button-radius);
     cursor: pointer;
-    letter-spacing: 0.03em;
+    font-family: var(--button-font-family);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    line-height: var(--button-line-height);
+    letter-spacing: var(--button-letter-spacing);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .button.label-s {
+    min-height: var(--button-height-small);
+    padding-inline: var(--button-padding-x-small);
+    border-radius: var(--button-radius-small);
+    font-size: var(--button-font-size-small);
+    font-weight: var(--button-font-weight-small);
+    line-height: var(--button-line-height-small);
   }
   
 /* ---------- Primary ----------*/
@@ -23,7 +42,7 @@
 
   .button-secondary {
     background-color: var(--button-surface-secondary);                                /*<--- Design Token Alias */
-    color: var(--text-light);                                                         /*<--- Design Token Alias */
+    color: var(--button-text-secondary);                                              /*<--- Design Token Alias */
     border: none;
   }
   
@@ -36,7 +55,7 @@
   .button-outline {
     background-color: var(--button-surface-outline);                                  /*<--- Design Token Alias */
     color: var(--button-text-outline);                                                /*<--- Design Token Alias */
-    border: var(--fieldBorderWidth) solid var(--button-surface-outline-border);       /*<--- Design Token Alias */ 
+    border: var(--button-outline-width) solid var(--button-surface-outline-border);   /*<--- Design Token Alias */
   }
   
   .button-outline:hover {

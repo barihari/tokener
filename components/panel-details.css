@@ -8,7 +8,7 @@
     grid-template-columns: auto 1fr auto;
     grid-gap: var(--space-4);
     padding: var(--space-4);
-    border-radius: var(--radius);
+    border-radius: var(--surface-radius);
     background-color: var(--surface-light);                                  /*<--- Design Token Alias */
     color: var(--text-body);                                                 /*<--- Design Token Alias */
     align-items: center;
@@ -22,6 +22,8 @@
 
 .userCardHandle {
     color: var(--text-body);                                                 /*<--- Design Token Alias */
+    font-size: 12px;
+    line-height: 16px;
 }
 
 
@@ -34,6 +36,7 @@
     grid-template-columns: 1fr auto;
     grid-gap: var(--space-4);
     padding: var(--space-5);
+    border-radius: var(--surface-radius);
     align-items: center;                                                
     color: var(--text-light);                                               /*<--- Design Token Alias */
     margin-bottom: var(--space-4);
@@ -76,6 +79,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: var(--space-5);
+    border-radius: var(--surface-radius);
     background-color: var(--surface-light);                                     /*<--- Design Token Alias */
     color:var(--text-body);                                                     /*<--- Design Token Alias */
     align-items: center;
@@ -107,7 +111,13 @@
 }
 
 .dataSymbol {
-    color: var(--text-subtle)                                                   /*<--- Design Token Alias */
+    display: inline-block;
+    margin-right: 0.08em;
+    color: inherit;
+    font-size: 0.55em;
+    line-height: 1;
+    vertical-align: 0.38em;
+    opacity: 0.6;
 }
 
 .dataNumber {
@@ -121,14 +131,19 @@
 
 .detailsCard {
     padding: var(--space-5);
-    border-radius: var(--radius);
+    border-radius: var(--surface-radius);
     background-color: var(--surface-light);                                       /*<--- Design Token Alias */
     color:var(--text-body);                                                       /*<--- Design Token Alias */
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--surface-shadow);
 }
 
 .detailsLabel {
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--eyebrow-stack-gap);
+}
+
+:root[data-theme="sage"] .detailsLabel {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .detailsTitle {
@@ -140,9 +155,14 @@
     color: var(--text-subtle);                                                    /*<--- Design Token Alias */
 }
 
+:root:not([data-theme]) .detailsBlurb,
+:root[data-theme="bankrate"] .detailsBlurb,
+:root[data-theme="capital-one"] .detailsBlurb {
+    font-size: 18px;
+    line-height: 28px;
+}
+
 .detailsActions {
     display: flex;
     gap: var(--space-2);
 }
-
-

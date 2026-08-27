@@ -31,14 +31,6 @@ body {
 }
 
 :root {
-    --textFrameRatio: 2.26;
-    --textFrameY: 0.64em;
-    --textFrameX: calc(var(--textFrameY) * var(--textFrameRatio));
-
-}
-
-:root {
-    --radius: 0.09rem;
     --fieldBorderWidth: 2px;
 }
 
@@ -90,4 +82,3 @@ body {
 }
 
 /* ------------------- Utilities --------------------------*/
-

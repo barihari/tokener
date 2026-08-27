@@ -50,6 +50,7 @@ main {
   grid-template-columns: 3rem 1fr;
   grid-gap: var(--space-5);
   padding: var(--space-5);
+  border-radius: var(--surface-radius);
   margin-bottom: var(--space-8);
   background-color: var(--surface-neutral-faint);                /*<--- Design Token Alias */
 }
@@ -58,8 +59,15 @@ main {
   padding-top: var(--space-4);
 }
 
+:root[data-theme="sage"] .postAuthor {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
 .postContent {
-  margin: var(--space-5) 0 var(--space-5) 0; 
+  margin: var(--eyebrow-stack-gap) 0 var(--space-5) 0;
 }
 
 .postDate {

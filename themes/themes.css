@@ -17,6 +17,21 @@
   --button-text-outline: #151519;
   --button-text-primary: #ffffff;
   --button-text-secondary: #151519;
+  --button-height: 48px;
+  --button-height-small: 40px;
+  --button-font-family: "Instrument Sans", "Source Sans 3", system-ui, sans-serif;
+  --button-font-size: 14px;
+  --button-font-size-small: 14px;
+  --button-font-weight: 600;
+  --button-font-weight-small: 700;
+  --button-letter-spacing: normal;
+  --button-line-height: 14px;
+  --button-line-height-small: 20px;
+  --button-outline-width: 2px;
+  --button-padding-x: 24px;
+  --button-padding-x-small: 16px;
+  --button-radius: 12px;
+  --button-radius-small: 8px;
   --color-base-black: #000000;
   --color-base-white: #ffffff;
   --color-danger-100: #fdf5f5;
@@ -66,6 +81,9 @@
   --grid-border-subtle: #9596a6;
   --grid-row-hover: #f2f6ff;
   --grid-row-surface: #ffffff;
+  --navigation-item-active: #dce7ff;
+  --navigation-item-hover: #f2f6ff;
+  --navigation-item-radius: 8px;
   --surface-dark: #000000;
   --surface-light: #ffffff;
   --surface-neutral-bold: #3d4750;
@@ -93,6 +111,19 @@
   --font-weight-label: 700;
   --font-weight-context: 900;
   --font-weight-title: 400;
+  --eyebrow-font-family: "Instrument Sans", "Source Sans 3", system-ui, sans-serif;
+  --eyebrow-font-size: 12px;
+  --eyebrow-font-weight: 700;
+  --eyebrow-letter-spacing: 2.5px;
+  --eyebrow-line-height: 12px;
+  --eyebrow-text-transform: uppercase;
+  --eyebrow-stack-gap: 16px;
+  --field-height: 48px;
+  --field-padding-x: 16px;
+  --field-radius: 12px;
+  --surface-radius: 12px;
+  --surface-shadow: 5px 5px 15px -10px rgba(43, 43, 43, 0.2),
+    -5px 5px 15px -10px rgba(43, 43, 43, 0.2);
 }
 
 /* Restored from the pre-Bankrate token set in Git history. */
@@ -110,6 +141,21 @@
   --button-surface-secondary: #018140;
   --button-text-outline: #141414;
   --button-text-secondary: #141414;
+  --button-height: 48px;
+  --button-height-small: 32px;
+  --button-font-family: "Source Sans 3", system-ui, sans-serif;
+  --button-font-size: 20px;
+  --button-font-size-small: 16px;
+  --button-font-weight: 400;
+  --button-font-weight-small: 600;
+  --button-letter-spacing: normal;
+  --button-line-height: 24px;
+  --button-line-height-small: 21px;
+  --button-outline-width: 1px;
+  --button-padding-x: 16px;
+  --button-padding-x-small: 20px;
+  --button-radius: 4px;
+  --button-radius-small: 2px;
   --color-informative-100: #ebf2fe;
   --color-informative-200: #a4c5fb;
   --color-informative-300: #5d97f8;
@@ -138,6 +184,9 @@
   --grid-border-faint: #ced5dd;
   --grid-border-subtle: #98a7b7;
   --grid-row-hover: #ebf4f9;
+  --navigation-item-active: #d3e7f3;
+  --navigation-item-hover: #ebf4f9;
+  --navigation-item-radius: 2px;
   --surface-neutral-bold: #3e4b59;
   --surface-neutral-faint: #f1f4f4;
   --surface-neutral-subtle: #ced5dd;
@@ -160,6 +209,18 @@
   --font-weight-label: 400;
   --font-weight-context: 600;
   --font-weight-title: 300;
+  --eyebrow-font-family: "Source Sans 3", system-ui, sans-serif;
+  --eyebrow-font-size: 16px;
+  --eyebrow-font-weight: 600;
+  --eyebrow-letter-spacing: 0.5px;
+  --eyebrow-line-height: 24px;
+  --eyebrow-text-transform: uppercase;
+  --eyebrow-stack-gap: 16px;
+  --field-height: 48px;
+  --field-padding-x: 8px;
+  --field-radius: 2px;
+  --surface-radius: 4px;
+  --surface-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Sage was not preserved in Git, so this palette is rebuilt from its bundled logo. */
@@ -176,6 +237,21 @@
   --button-surface-secondary: #78a744;
   --button-text-outline: #18231b;
   --button-text-secondary: #18231b;
+  --button-height: 48px;
+  --button-height-small: 36px;
+  --button-font-family: "DM Sans", system-ui, sans-serif;
+  --button-font-size: 16px;
+  --button-font-size-small: 14px;
+  --button-font-weight: 600;
+  --button-font-weight-small: 600;
+  --button-letter-spacing: normal;
+  --button-line-height: 24px;
+  --button-line-height-small: 20px;
+  --button-outline-width: 2px;
+  --button-padding-x: 36px;
+  --button-padding-x-small: 12px;
+  --button-radius: 999px;
+  --button-radius-small: 999px;
   --color-primary-100: #eef5ef;
   --color-primary-200: #c8ddcb;
   --color-primary-300: #91b898;
@@ -192,6 +268,9 @@
   --grid-border-faint: #d2ddd4;
   --grid-border-subtle: #9eb0a2;
   --grid-row-hover: #eef5ef;
+  --navigation-item-active: #c8ddcb;
+  --navigation-item-hover: #eef5ef;
+  --navigation-item-radius: 8px;
   --surface-neutral-bold: #354139;
   --surface-neutral-faint: #f4f7f4;
   --surface-neutral-subtle: #d2ddd4;
@@ -214,4 +293,16 @@
   --font-weight-label: 600;
   --font-weight-context: 700;
   --font-weight-title: 700;
+  --eyebrow-font-family: "DM Sans", system-ui, sans-serif;
+  --eyebrow-font-size: 12px;
+  --eyebrow-font-weight: 600;
+  --eyebrow-letter-spacing: normal;
+  --eyebrow-line-height: 16px;
+  --eyebrow-text-transform: none;
+  --eyebrow-stack-gap: 10px;
+  --field-height: 48px;
+  --field-padding-x: 16px;
+  --field-radius: 8px;
+  --surface-radius: 16px;
+  --surface-shadow: none;
 }

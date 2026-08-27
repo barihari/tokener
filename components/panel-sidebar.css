@@ -8,15 +8,16 @@
 
 .menuItem {
   padding: var(--space-3);
+  border-radius: var(--navigation-item-radius);
 }
   
 .menuItem.active {
-  background-color: var(--color-primary-200);                     /*<--- Design Token */
+  background-color: var(--navigation-item-active);
   font-weight: bold;
 }
 
 .menuItem.active:hover {
-  background-color: var(--color-primary-200);                     /*<--- Design Token */
+  background-color: var(--navigation-item-active);
 }
   
 .menuItem:not(.active) {
@@ -32,5 +33,5 @@
 }
 
 .menuItem:hover {
-  background-color: var(--color-primary-100);                     /*<--- Design Token Alias */
-} 
+  background-color: var(--navigation-item-hover);
+}
