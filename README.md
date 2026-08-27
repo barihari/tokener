@@ -14,8 +14,8 @@ Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ## Themes
 
-Brand colors, logos, and typography are defined in `themes/themes.css`. The switcher stores the selected theme in the browser so it persists after refresh.
+Brand colors, logos, typography, spacing, and component treatments are defined as semantic tokens in `themes/themes.css`. Components use the same classes in every theme, and the switcher changes only the token values. The selected theme is stored in the browser so it persists after refresh.
 
-Open-source fonts are bundled in `assets/fonts`, with each license stored beside its font family.
+Fonts are bundled in `assets/fonts`; licensing notes and available license files are documented there.
 
 [Original Figma file](https://www.figma.com/file/yF81gk6UJP6VA8WYa8sJGl/Design-Tokens-Test?node-id=4%3A363)

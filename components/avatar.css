@@ -1,6 +1,4 @@
-/* ------------------- Avatar --------------------------*/
-
 .avatar {
-    border-radius: 100%;
-    background-color: var(--color-neutral-200);                          /*<--- Design Token */
+  border-radius: 50%;
+  background: var(--avatar-surface);
 }

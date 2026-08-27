@@ -1,75 +1,50 @@
-/* ------------------- Button --------------------------*/
-
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: var(--button-height);
-    padding: 0 var(--button-padding-x);
-    border-radius: var(--button-radius);
-    cursor: pointer;
-    font-family: var(--button-font-family);
-    font-size: var(--button-font-size);
-    font-weight: var(--button-font-weight);
-    line-height: var(--button-line-height);
-    letter-spacing: var(--button-letter-spacing);
-    text-decoration: none;
-    white-space: nowrap;
-  }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--button-height);
+  padding: 0 var(--button-padding-x);
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  letter-spacing: var(--button-letter-spacing, normal);
+  text-decoration: none;
+  white-space: nowrap;
+}
 
-  .button.label-s {
-    min-height: var(--button-height-small);
-    padding-inline: var(--button-padding-x-small);
-    border-radius: var(--button-radius-small);
-    font-size: var(--button-font-size-small);
-    font-weight: var(--button-font-weight-small);
-    line-height: var(--button-line-height-small);
-  }
-  
-/* ---------- Primary ----------*/
+.button-small {
+  min-height: var(--button-height-small);
+  padding-inline: var(--button-padding-x-small);
+  border-radius: var(--button-radius-small);
+  font-size: var(--button-font-size-small);
+  font-weight: var(--button-font-weight-small);
+  line-height: var(--button-line-height-small);
+}
 
-  .button-primary {
-    background-color: var(--button-surface-primary);                                  /*<--- Design Token Alias */
-    color: var(--button-text-primary);                                                /*<--- Design Token Alias */
-    border: none;
-  }
-  
-  .button-primary:hover {
-    background-color: var(--button-hover-primary);                                    /*<--- Design Token Alias */
-  }
+.button-primary {
+  border: 0;
+  background: var(--button-surface-primary);
+  color: var(--button-text-primary);
+}
 
-  /* ---------- Secondary ----------*/
+.button-primary:hover {
+  background: var(--button-hover-primary);
+}
 
-  .button-secondary {
-    background-color: var(--button-surface-secondary);                                /*<--- Design Token Alias */
-    color: var(--button-text-secondary);                                              /*<--- Design Token Alias */
-    border: none;
-  }
-  
-  .button-secondary:hover {
-    background-color: var(--button-hover-secondary);                                  /*<--- Design Token Alias */
-  }
-  
-/* ---------- Outline ----------*/
+.button-outline {
+  border: var(--button-outline-width) solid var(--button-outline-border);
+  background: var(--button-surface-outline);
+  color: var(--button-text-outline);
+}
 
-  .button-outline {
-    background-color: var(--button-surface-outline);                                  /*<--- Design Token Alias */
-    color: var(--button-text-outline);                                                /*<--- Design Token Alias */
-    border: var(--button-outline-width) solid var(--button-surface-outline-border);   /*<--- Design Token Alias */
-  }
-  
-  .button-outline:hover {
-    background-color: var(--button-hover-outline);                                    /*<--- Design Token Alias */ 
-  }
+.button-outline:hover {
+  background: var(--button-hover-outline);
+}
 
-/* ---------- Destructive ----------*/
-
-  .button-destructive {
-    background-color: var(--button-surface-destructive);                              /*<--- Design Token Alias */
-    color: var(--button-text-destructive);                                            /*<--- Design Token Alias */
-    border: none;
-  }
-  
-  .button-destructive:hover {
-    background-color: var(--button-hover-destructive);                                /*<--- Design Token Alias */
-  }
+.button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--brand-accent) 35%, transparent);
+  outline-offset: 2px;
+}

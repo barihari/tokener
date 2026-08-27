@@ -1,44 +1,45 @@
 (function () {
-  const themes = {
+  const themeNames = {
     bankrate: "Bankrate",
     "capital-one": "Capital One",
     sage: "Sage Mortgage"
   };
   const storageKey = "tokener-theme";
-  const storedTheme = window.localStorage.getItem(storageKey);
-  const initialTheme = Object.hasOwn(themes, storedTheme) ? storedTheme : "bankrate";
+  const savedTheme = window.localStorage.getItem(storageKey);
+  const initialTheme = Object.hasOwn(themeNames, savedTheme) ? savedTheme : "bankrate";
 
+  // Apply the saved theme before the page paints so the default brand never flashes.
   document.documentElement.dataset.theme = initialTheme;
 
   window.addEventListener("DOMContentLoaded", function () {
-    const options = document.querySelectorAll("[data-theme-option]");
-    const select = document.querySelector(".themeSelect");
+    const themeButtons = document.querySelectorAll("[data-theme-option]");
+    const themeSelect = document.querySelector(".themeSelect");
     const logo = document.querySelector(".brandLogo");
 
-    function setTheme(theme) {
-      if (!Object.hasOwn(themes, theme)) return;
+    function applyTheme(theme) {
+      if (!Object.hasOwn(themeNames, theme)) return;
 
       document.documentElement.dataset.theme = theme;
       window.localStorage.setItem(storageKey, theme);
-      logo.setAttribute("aria-label", themes[theme]);
+      logo.setAttribute("aria-label", themeNames[theme]);
 
-      options.forEach(function (option) {
-        option.setAttribute("aria-pressed", String(option.dataset.themeOption === theme));
+      themeButtons.forEach(function (button) {
+        button.setAttribute("aria-pressed", String(button.dataset.themeOption === theme));
       });
 
-      select.value = theme;
+      themeSelect.value = theme;
     }
 
-    options.forEach(function (option) {
-      option.addEventListener("click", function () {
-        setTheme(option.dataset.themeOption);
+    themeButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        applyTheme(button.dataset.themeOption);
       });
     });
 
-    select.addEventListener("change", function () {
-      setTheme(select.value);
+    themeSelect.addEventListener("change", function () {
+      applyTheme(themeSelect.value);
     });
 
-    setTheme(initialTheme);
+    applyTheme(initialTheme);
   });
 })();

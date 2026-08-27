@@ -1,24 +1,71 @@
+/* Components consume these semantic tokens; brand-specific values stay here. */
 :root,
 :root[data-theme="bankrate"] {
+  /* Brand */
   --brand-logo: url("/assets/logo/br-wordmark-rebrand.svg");
   --brand-logo-width: 176px;
-  --brand-brand: #0157ff;
-  --button-hover-destructive: #9e1919;
-  --button-hover-outline: #f2f6ff;
-  --button-hover-primary: #003db6;
-  --button-hover-secondary: #b67f00;
-  --button-surface-destructive: #dc2626;
-  --button-surface-outline: #ffffff;
-  --button-surface-outline-border: #0157ff;
+  --brand-accent: #0157ff;
+
+  /* Typography */
+  --font-body: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-title: "Recife Text", Georgia, "Times New Roman", serif;
+  --font-weight-body: 400;
+  --font-weight-emphasis: 700;
+  --font-weight-title: 400;
+
+  --eyebrow-font-family: "Instrument Sans", system-ui, sans-serif;
+  --eyebrow-font-size: 12px;
+  --eyebrow-font-weight: 700;
+  --eyebrow-letter-spacing: 2.5px;
+  --eyebrow-line-height: 12px;
+  --eyebrow-text-transform: uppercase;
+  --eyebrow-stack-gap: 16px;
+
+  --goal-label-padding-top: 16px;
+  --goal-label-font-size: 14px;
+  --goal-label-font-weight: 700;
+  --goal-label-line-height: 18px;
+  --details-label-font-size: 12px;
+  --details-label-line-height: 12px;
+  --details-blurb-font-size: 18px;
+  --details-blurb-line-height: 28px;
+
+  /* Color */
+  --text-body: #151519;
+  --text-muted: #666779;
+  --text-link: #003db6;
+  --text-link-hover: #3b82f6;
+  --text-on-accent: #ffffff;
+  --surface-page: #ffffff;
+  --surface-card: #ffffff;
+  --surface-muted: #f5f5f7;
+  --surface-panel: #f2f6ff;
+  --surface-accent: #003db6;
+  --avatar-surface: #cdced5;
+  --highlight-avatar-surface: #ffcb52;
+  --border-strong: #666779;
+  --border-muted: #cdced5;
+  --border-field: #9596a6;
+  --field-focus: #003db6;
+  --row-hover: #f2f6ff;
+
+  /* Links */
+  --link-font-weight: 500;
+  --link-text-decoration: underline;
+  --link-underline-thickness: 1px;
+  --link-underline-offset: 3px;
+
+  /* Buttons */
   --button-surface-primary: #0157ff;
-  --button-surface-secondary: #ffb301;
-  --button-text-destructive: #ffffff;
-  --button-text-outline: #151519;
+  --button-hover-primary: #003db6;
   --button-text-primary: #ffffff;
-  --button-text-secondary: #151519;
+  --button-surface-outline: #ffffff;
+  --button-outline-border: #0157ff;
+  --button-hover-outline: #f2f6ff;
+  --button-text-outline: #151519;
   --button-height: 48px;
   --button-height-small: 40px;
-  --button-font-family: "Instrument Sans", "Source Sans 3", system-ui, sans-serif;
+  --button-font-family: "Instrument Sans", system-ui, sans-serif;
   --button-font-size: 16px;
   --button-font-size-small: 14px;
   --button-font-weight: 600;
@@ -31,98 +78,14 @@
   --button-padding-x-small: 16px;
   --button-radius: 12px;
   --button-radius-small: 8px;
-  --color-base-black: #000000;
-  --color-base-white: #ffffff;
-  --color-danger-100: #fdf5f5;
-  --color-danger-200: #f2acac;
-  --color-danger-300: #e76c6c;
-  --color-danger-400: #dc2626;
-  --color-danger-500: #9e1919;
-  --color-danger-600: #5e0f0f;
-  --color-informative-100: #f2f6ff;
-  --color-informative-200: #9dbeff;
-  --color-informative-300: #528dff;
-  --color-informative-400: #0157ff;
-  --color-informative-500: #003db6;
-  --color-informative-600: #00246b;
-  --color-neutral-100: #f5f5f7;
-  --color-neutral-200: #cdced5;
-  --color-neutral-300: #9596a6;
-  --color-neutral-400: #666779;
-  --color-neutral-500: #3f404b;
-  --color-neutral-600: #151519;
-  --color-primary-100: #f2f6ff;
-  --color-primary-200: #9dbeff;
-  --color-primary-300: #528dff;
-  --color-primary-400: #0157ff;
-  --color-primary-500: #003db6;
-  --color-primary-600: #00246b;
-  --color-secondary-100: #fffbf2;
-  --color-secondary-200: #ffe29d;
-  --color-secondary-300: #ffcb52;
-  --color-secondary-400: #ffb301;
-  --color-secondary-500: #b67f00;
-  --color-secondary-600: #6b4b00;
-  --color-success-100: #aef1c7;
-  --color-success-200: #6ee69a;
-  --color-success-300: #2fdb6e;
-  --color-success-400: #2fdb6e;
-  --color-success-500: #1ca44e;
-  --color-success-600: #116430;
-  --color-warning-100: #fffbf2;
-  --color-warning-200: #ffe29d;
-  --color-warning-300: #ffcb52;
-  --color-warning-400: #ffb301;
-  --color-warning-500: #b67f00;
-  --color-warning-600: #6b4b00;
-  --grid-border-bold: #666779;
-  --grid-border-faint: #cdced5;
-  --grid-border-subtle: #9596a6;
-  --grid-row-hover: #f2f6ff;
-  --grid-row-surface: #ffffff;
-  --navigation-item-active: #dce7ff;
-  --navigation-item-hover: #f2f6ff;
-  --navigation-item-radius: 8px;
-  --surface-dark: #000000;
-  --surface-light: #ffffff;
-  --surface-neutral-bold: #3d4750;
-  --surface-neutral-faint: #f5f5f7;
-  --surface-neutral-subtle: #cdced5;
-  --surface-primary-bold: #003db6;
-  --surface-primary-faint: #f2f6ff;
-  --surface-primary-subtle: #9dbeff;
-  --surface-secondary-bold: #b67f00;
-  --surface-secondary-faint: #fffbf2;
-  --surface-secondary-subtle: #ffe29d;
-  --text-body: #151519;
-  --text-dark: #000000;
-  --text-destructive: #dc2626;
-  --text-faint: #cdced5;
-  --text-light: #ffffff;
-  --text-link: #003db6;
-  --text-link-hover: #3b82f6;
-  --link-font-weight: 500;
-  --link-text-decoration: underline;
-  --link-underline-thickness: 1px;
-  --link-underline-offset: 3px;
-  --text-subtle: #666779;
-  --font-body: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-label: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-title: "Recife Text", Georgia, "Times New Roman", serif;
-  --font-weight-body: 400;
-  --font-weight-emphasis: 700;
-  --font-weight-label: 700;
-  --font-weight-context: 900;
-  --font-weight-title: 400;
-  --eyebrow-font-family: "Instrument Sans", "Source Sans 3", system-ui, sans-serif;
-  --eyebrow-font-size: 12px;
-  --eyebrow-font-weight: 700;
-  --eyebrow-letter-spacing: 2.5px;
-  --eyebrow-line-height: 12px;
-  --eyebrow-text-transform: uppercase;
-  --eyebrow-stack-gap: 16px;
-  --layout-heading-gap: 32px;
-  --layout-tab-gap: 24px;
+
+  /* Navigation */
+  --navigation-active: #dce7ff;
+  --navigation-active-font-weight: 700;
+  --navigation-hover: #f2f6ff;
+  --navigation-radius: 8px;
+
+  /* Tabs */
   --tab-font-family: "Instrument Sans", system-ui, sans-serif;
   --tab-font-size: 18px;
   --tab-line-height: 24px;
@@ -134,6 +97,10 @@
   --tab-indicator-width: 3px;
   --tab-item-gap: 24px;
   --tab-padding-bottom: 8px;
+
+  /* Layout */
+  --layout-heading-gap: 32px;
+  --layout-tab-gap: 24px;
   --layout-section-gap: 48px;
   --layout-supporting-gap: 32px;
   --layout-form-gap: 40px;
@@ -141,6 +108,8 @@
   --layout-sidebar-gap: 32px;
   --details-title-gap: 16px;
   --details-action-gap: 24px;
+
+  /* Rate list */
   --list-font-family: "Instrument Sans", system-ui, sans-serif;
   --list-font-size: 16px;
   --list-line-height: 24px;
@@ -148,6 +117,8 @@
   --list-label-font-weight: 700;
   --list-row-padding-y: 20px;
   --list-column-gap: 24px;
+
+  /* Fields and surfaces */
   --field-height: 48px;
   --field-padding-x: 16px;
   --field-radius: 12px;
@@ -156,92 +127,17 @@
     -5px 5px 15px -10px rgba(43, 43, 43, 0.2);
 }
 
-/* Restored from the pre-Bankrate token set in Git history. */
 :root[data-theme="capital-one"] {
   --brand-logo: url("/assets/logo/logo-cap1.png");
   --brand-logo-width: 140px;
-  --brand-brand: #2d739d;
-  --button-hover-destructive: #fdf5f5;
-  --button-hover-outline: #d3e7f3;
-  --button-hover-primary: #1c4963;
-  --button-hover-secondary: #075e46;
-  --button-surface-outline-border: #2d739d;
-  --button-surface-primary: #2d739d;
-  --button-surface-secondary: #018140;
-  --button-text-outline: #141414;
-  --button-text-secondary: #141414;
-  --button-height: 48px;
-  --button-height-small: 32px;
-  --button-font-family: "Source Sans 3", system-ui, sans-serif;
-  --button-font-size: 20px;
-  --button-font-size-small: 16px;
-  --button-font-weight: 400;
-  --button-font-weight-small: 600;
-  --button-letter-spacing: normal;
-  --button-line-height: 24px;
-  --button-line-height-small: 21px;
-  --button-outline-width: 1px;
-  --button-padding-x: 16px;
-  --button-padding-x-small: 20px;
-  --button-radius: 4px;
-  --button-radius-small: 2px;
-  --color-informative-100: #ebf2fe;
-  --color-informative-200: #a4c5fb;
-  --color-informative-300: #5d97f8;
-  --color-informative-400: #156af4;
-  --color-informative-500: #084bb7;
-  --color-informative-600: #052b69;
-  --color-neutral-100: #f1f4f4;
-  --color-neutral-200: #ced5dd;
-  --color-neutral-300: #98a7b7;
-  --color-neutral-400: #6c8199;
-  --color-neutral-500: #3e4b59;
-  --color-neutral-600: #141414;
-  --color-primary-100: #ebf4f9;
-  --color-primary-200: #d3e7f3;
-  --color-primary-300: #499acb;
-  --color-primary-400: #2d739d;
-  --color-primary-500: #1c4963;
-  --color-primary-600: #0c1e2a;
-  --color-secondary-100: #eff8ed;
-  --color-secondary-200: #b5d8ab;
-  --color-secondary-300: #44a64e;
-  --color-secondary-400: #018140;
-  --color-secondary-500: #075e46;
-  --color-secondary-600: #00371b;
-  --grid-border-bold: #6c8199;
-  --grid-border-faint: #ced5dd;
-  --grid-border-subtle: #98a7b7;
-  --grid-row-hover: #ebf4f9;
-  --navigation-item-active: #d3e7f3;
-  --navigation-item-hover: #ebf4f9;
-  --navigation-item-radius: 2px;
-  --surface-neutral-bold: #3e4b59;
-  --surface-neutral-faint: #f1f4f4;
-  --surface-neutral-subtle: #ced5dd;
-  --surface-primary-bold: #1c4963;
-  --surface-primary-faint: #ebf4f9;
-  --surface-primary-subtle: #d3e7f3;
-  --surface-secondary-bold: #075e46;
-  --surface-secondary-faint: #eff8ed;
-  --surface-secondary-subtle: #b5d8ab;
-  --text-body: #141414;
-  --text-faint: #ced5dd;
-  --text-link: #dc2626;
-  --text-link-hover: #e76c6c;
-  --link-font-weight: 400;
-  --link-text-decoration: underline;
-  --link-underline-thickness: 1px;
-  --link-underline-offset: 3px;
-  --text-subtle: #6c8199;
+  --brand-accent: #2d739d;
+
   --font-body: "Source Sans 3", system-ui, sans-serif;
-  --font-label: "Source Sans 3", system-ui, sans-serif;
   --font-title: "Source Sans 3", system-ui, sans-serif;
   --font-weight-body: 400;
   --font-weight-emphasis: 400;
-  --font-weight-label: 400;
-  --font-weight-context: 600;
   --font-weight-title: 300;
+
   --eyebrow-font-family: "Source Sans 3", system-ui, sans-serif;
   --eyebrow-font-size: 16px;
   --eyebrow-font-weight: 600;
@@ -249,11 +145,57 @@
   --eyebrow-line-height: 24px;
   --eyebrow-text-transform: uppercase;
   --eyebrow-stack-gap: 16px;
-  --layout-heading-gap: 24px;
-  --layout-tab-gap: 20px;
+
+  --goal-label-padding-top: 16px;
+  --goal-label-font-size: 16px;
+  --goal-label-font-weight: 600;
+  --goal-label-line-height: 24px;
+  --details-label-font-size: 16px;
+  --details-label-line-height: 24px;
+  --details-blurb-font-size: 20px;
+  --details-blurb-line-height: 30px;
+
+  --text-body: #141414;
+  --text-muted: #6c8199;
+  --text-link: #dc2626;
+  --text-link-hover: #e76c6c;
+  --surface-muted: #f1f4f4;
+  --surface-panel: #ebf4f9;
+  --surface-accent: #1c4963;
+  --avatar-surface: #ced5dd;
+  --highlight-avatar-surface: #44a64e;
+  --border-strong: #6c8199;
+  --border-muted: #ced5dd;
+  --border-field: #98a7b7;
+  --field-focus: #1c4963;
+  --row-hover: #ebf4f9;
+
+  --link-font-weight: 400;
+  --link-text-decoration: underline;
+
+  --button-surface-primary: #2d739d;
+  --button-hover-primary: #1c4963;
+  --button-outline-border: #2d739d;
+  --button-hover-outline: #d3e7f3;
+  --button-text-outline: #141414;
+  --button-height-small: 32px;
+  --button-font-family: "Source Sans 3", system-ui, sans-serif;
+  --button-font-size: 20px;
+  --button-font-size-small: 16px;
+  --button-font-weight: 400;
+  --button-font-weight-small: 600;
+  --button-line-height-small: 21px;
+  --button-outline-width: 1px;
+  --button-padding-x: 16px;
+  --button-padding-x-small: 20px;
+  --button-radius: 4px;
+  --button-radius-small: 2px;
+
+  --navigation-active: #d3e7f3;
+  --navigation-hover: #ebf4f9;
+  --navigation-radius: 2px;
+
   --tab-font-family: "Source Sans 3", system-ui, sans-serif;
-  --tab-font-size: 18px;
-  --tab-line-height: 24px;
   --tab-font-weight: 400;
   --tab-active-font-weight: 600;
   --tab-color: #6c8199;
@@ -262,100 +204,39 @@
   --tab-indicator-width: 2px;
   --tab-item-gap: 20px;
   --tab-padding-bottom: 6px;
+
+  --layout-heading-gap: 24px;
+  --layout-tab-gap: 20px;
   --layout-section-gap: 32px;
   --layout-supporting-gap: 24px;
   --layout-form-gap: 32px;
   --layout-card-gap: 16px;
   --layout-sidebar-gap: 24px;
   --details-title-gap: 12px;
-  --details-action-gap: 24px;
+
   --list-font-family: "Source Sans 3", system-ui, sans-serif;
-  --list-font-size: 16px;
-  --list-line-height: 24px;
   --list-label-font-family: "Source Sans 3", system-ui, sans-serif;
   --list-label-font-weight: 600;
   --list-row-padding-y: 12px;
   --list-column-gap: 16px;
-  --field-height: 48px;
+
   --field-padding-x: 8px;
   --field-radius: 2px;
   --surface-radius: 4px;
   --surface-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Sage was not preserved in Git, so this palette is rebuilt from its bundled logo. */
 :root[data-theme="sage"] {
   --brand-logo: url("/assets/logo/logo-sg.png");
   --brand-logo-width: 150px;
-  --brand-brand: #3f7a48;
-  --button-hover-outline: #eef5ef;
-  --button-hover-primary: #285431;
-  --button-hover-secondary: #466c25;
-  --button-surface-outline-border: #3f7a48;
-  --button-surface-primary: #3f7a48;
-  --button-surface-secondary: #78a744;
-  --button-text-outline: #18231b;
-  --button-text-secondary: #18231b;
-  --button-height: 48px;
-  --button-height-small: 36px;
-  --button-font-family: "DM Sans", system-ui, sans-serif;
-  --button-font-size: 16px;
-  --button-font-size-small: 14px;
-  --button-font-weight: 600;
-  --button-font-weight-small: 600;
-  --button-letter-spacing: normal;
-  --button-line-height: 24px;
-  --button-line-height-small: 20px;
-  --button-outline-width: 2px;
-  --button-padding-x: 36px;
-  --button-padding-x-small: 12px;
-  --button-radius: 999px;
-  --button-radius-small: 999px;
-  --color-primary-100: #eef5ef;
-  --color-primary-200: #c8ddcb;
-  --color-primary-300: #91b898;
-  --color-primary-400: #5d9366;
-  --color-primary-500: #3f7a48;
-  --color-primary-600: #285431;
-  --color-secondary-100: #f4f7ef;
-  --color-secondary-200: #dce9ca;
-  --color-secondary-300: #b6d18d;
-  --color-secondary-400: #78a744;
-  --color-secondary-500: #5a832f;
-  --color-secondary-600: #3c5c20;
-  --grid-border-bold: #6e7e72;
-  --grid-border-faint: #d2ddd4;
-  --grid-border-subtle: #9eb0a2;
-  --grid-row-hover: #eef5ef;
-  --navigation-item-active: #c8ddcb;
-  --navigation-item-hover: #eef5ef;
-  --navigation-item-radius: 8px;
-  --surface-neutral-bold: #354139;
-  --surface-neutral-faint: #f4f7f4;
-  --surface-neutral-subtle: #d2ddd4;
-  --surface-primary-bold: #285431;
-  --surface-primary-faint: #eef5ef;
-  --surface-primary-subtle: #c8ddcb;
-  --surface-secondary-bold: #466c25;
-  --surface-secondary-faint: #f4f7ef;
-  --surface-secondary-subtle: #dce9ca;
-  --text-body: #18231b;
-  --text-faint: #c4d0c6;
-  --text-link: #285431;
-  --text-link-hover: #3f7a48;
-  --link-font-weight: 500;
-  --link-text-decoration: none;
-  --link-underline-thickness: 1px;
-  --link-underline-offset: 3px;
-  --text-subtle: #59695d;
+  --brand-accent: #3f7a48;
+
   --font-body: "Geist", system-ui, sans-serif;
-  --font-label: "DM Sans", system-ui, sans-serif;
   --font-title: "Libre Baskerville", Georgia, serif;
   --font-weight-body: 400;
   --font-weight-emphasis: 600;
-  --font-weight-label: 600;
-  --font-weight-context: 700;
   --font-weight-title: 700;
+
   --eyebrow-font-family: "DM Sans", system-ui, sans-serif;
   --eyebrow-font-size: 12px;
   --eyebrow-font-weight: 600;
@@ -363,34 +244,77 @@
   --eyebrow-line-height: 16px;
   --eyebrow-text-transform: none;
   --eyebrow-stack-gap: 10px;
-  --layout-heading-gap: 32px;
-  --layout-tab-gap: 24px;
+
+  --goal-label-padding-top: 10px;
+  --goal-label-font-size: 18px;
+  --goal-label-font-weight: 600;
+  --goal-label-line-height: 28px;
+  --details-label-font-size: 16px;
+  --details-label-line-height: 24px;
+  --details-blurb-font-size: 18px;
+  --details-blurb-line-height: 28px;
+
+  --text-body: #18231b;
+  --text-muted: #59695d;
+  --text-link: #285431;
+  --text-link-hover: #3f7a48;
+  --surface-muted: #f4f7f4;
+  --surface-panel: #eef5ef;
+  --surface-accent: #285431;
+  --avatar-surface: #cdced5;
+  --highlight-avatar-surface: #b6d18d;
+  --border-strong: #6e7e72;
+  --border-muted: #d2ddd4;
+  --border-field: #9eb0a2;
+  --field-focus: #3f7a48;
+  --row-hover: #eef5ef;
+
+  --link-font-weight: 500;
+  --link-text-decoration: none;
+
+  --button-surface-primary: #3f7a48;
+  --button-hover-primary: #285431;
+  --button-outline-border: #3f7a48;
+  --button-hover-outline: #eef5ef;
+  --button-text-outline: #18231b;
+  --button-height-small: 36px;
+  --button-font-family: "DM Sans", system-ui, sans-serif;
+  --button-font-size: 16px;
+  --button-font-size-small: 14px;
+  --button-font-weight: 600;
+  --button-font-weight-small: 600;
+  --button-outline-width: 2px;
+  --button-padding-x: 36px;
+  --button-padding-x-small: 12px;
+  --button-radius: 999px;
+  --button-radius-small: 999px;
+
+  --navigation-active: #c8ddcb;
+  --navigation-hover: #eef5ef;
+  --navigation-radius: 8px;
+
   --tab-font-family: "DM Sans", system-ui, sans-serif;
-  --tab-font-size: 18px;
-  --tab-line-height: 24px;
   --tab-font-weight: 400;
   --tab-active-font-weight: 600;
   --tab-color: #59695d;
   --tab-active-color: #285431;
   --tab-indicator-color: #3f7a48;
-  --tab-indicator-width: 3px;
-  --tab-item-gap: 24px;
-  --tab-padding-bottom: 8px;
+
+  --layout-heading-gap: 32px;
+  --layout-tab-gap: 24px;
   --layout-section-gap: 40px;
   --layout-supporting-gap: 32px;
   --layout-form-gap: 40px;
   --layout-card-gap: 16px;
   --layout-sidebar-gap: 32px;
   --details-title-gap: 16px;
-  --details-action-gap: 24px;
+
   --list-font-family: "Geist", system-ui, sans-serif;
-  --list-font-size: 16px;
-  --list-line-height: 24px;
   --list-label-font-family: "DM Sans", system-ui, sans-serif;
   --list-label-font-weight: 600;
   --list-row-padding-y: 16px;
   --list-column-gap: 24px;
-  --field-height: 48px;
+
   --field-padding-x: 16px;
   --field-radius: 8px;
   --surface-radius: 16px;

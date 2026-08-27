@@ -1,15 +1,14 @@
-/* ------------------- Panel Main --------------------------*/
-
 main {
   padding: var(--space-8);
 }
 
 main > h1 {
-  margin-bottom: var(--layout-heading-gap);
+  margin: 0.67em 0 var(--layout-heading-gap);
+  font-family: var(--font-title);
+  font-size: 45px;
+  font-weight: var(--font-weight-title);
+  line-height: 1.24;
 }
-
-/* ------------------- Tab --------------------------*/
-
 
 .tabs {
   display: flex;
@@ -21,14 +20,10 @@ main > h1 {
 }
 
 .tab {
-  border-bottom: var(--tab-indicator-width) solid transparent;
   padding-bottom: var(--tab-padding-bottom);
+  border-bottom: var(--tab-indicator-width) solid transparent;
   color: var(--tab-color);
   font-weight: var(--tab-font-weight);
-}
-
-.tab:not(.active) {
-  cursor: pointer;
 }
 
 .tab.active {
@@ -37,58 +32,50 @@ main > h1 {
   font-weight: var(--tab-active-font-weight);
 }
 
-/* ------------------- Search --------------------------*/
-
 .searchSection {
   margin-bottom: var(--layout-section-gap);
+  font-size: 16px;
+  line-height: 24px;
 }
 
+.goalCard {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: var(--space-5);
+  margin-bottom: var(--layout-section-gap);
+  padding: var(--space-5);
+  border-radius: var(--surface-radius);
+  background: var(--surface-muted);
+}
 
-/* ------------------- Post --------------------------*/
-
-
-.postAvatar {
+.goalCardAvatar {
   width: 3rem;
   height: 3rem;
 }
 
-.post {
-  display: grid;
-  grid-template-columns: 3rem 1fr;
-  grid-gap: var(--space-5);
-  padding: var(--space-5);
-  border-radius: var(--surface-radius);
-  margin-bottom: var(--layout-section-gap);
-  background-color: var(--surface-neutral-faint);                /*<--- Design Token Alias */
+.goalCardLabel {
+  padding-top: var(--goal-label-padding-top);
+  font-family: var(--eyebrow-font-family);
+  font-size: var(--goal-label-font-size);
+  font-weight: var(--goal-label-font-weight);
+  line-height: var(--goal-label-line-height);
+  letter-spacing: var(--eyebrow-letter-spacing);
+  text-transform: var(--eyebrow-text-transform);
 }
 
-.postAuthor {
-  padding-top: var(--space-4);
+.goalCardText {
+  margin: var(--eyebrow-stack-gap) 0 var(--space-5);
+  font-size: 20px;
+  line-height: 1.6;
 }
 
-:root:not([data-theme]) .postAuthor,
-:root[data-theme="bankrate"] .postAuthor {
-  font-size: 14px;
-  line-height: 18px;
+.goalCardSource {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-:root[data-theme="sage"] .postAuthor {
-  padding-top: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-}
-
-.postContent {
-  margin: var(--eyebrow-stack-gap) 0 var(--space-5) 0;
-}
-
-.postDate {
-  color: var(--text-body)                                        /*<--- Design Token Alias */
-}
-
-.postMain a {
-  color: var(--text-link);                                       /*<--- Design Token Alias */
+.goalCardSource a {
+  color: var(--text-link);
   font-weight: var(--link-font-weight);
   text-decoration-color: currentColor;
   text-decoration-line: var(--link-text-decoration);
@@ -97,59 +84,51 @@ main > h1 {
   text-underline-offset: var(--link-underline-offset);
 }
 
-.postMain a:hover {
-  color: var(--text-link-hover);                                 /*<--- Design Token Alias */
+.goalCardSource a:hover {
+  color: var(--text-link-hover);
   text-decoration-line: underline;
 }
 
-
-
-/* ------------------- Email --------------------------*/
-
-.emails {
-  border-top: 1px solid var(--grid-border-faint);                /*<--- Design Token Alias */
+.rateList {
   margin-bottom: var(--layout-form-gap);
+  border-top: 1px solid var(--border-muted);
   font-family: var(--list-font-family);
   font-size: var(--list-font-size);
-  font-weight: 400;
   line-height: var(--list-line-height);
 }
 
-.email {
+.rateRow {
   display: grid;
   grid-template-columns: 1fr 4fr;
   column-gap: var(--list-column-gap);
-  padding: var(--list-row-padding-y) 0;
-  border-bottom: 1px solid var(--grid-border-faint);             /*<--- Design Token Alias */
-  min-width: 0;
   min-width: 100%;
+  padding: var(--list-row-padding-y) 0;
+  border-bottom: 1px solid var(--border-muted);
 }
 
-.email:hover {
-  background-color: var(--grid-row-hover);                       /*<--- Design Token Alias */
+.rateRow:hover {
+  background: var(--row-hover);
 }
 
-.listCell {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  white-space: nowrap;
+.rateCell {
   min-width: 0;
-  color: var(--text-body)                                        /*<--- Design Token Alias */
+  overflow: hidden;
+  color: var(--text-body);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.listCell:first-child {
+.rateCell:first-child {
   font-family: var(--list-label-font-family);
   font-weight: var(--list-label-font-weight);
 }
 
-
-/* ------------------- Form --------------------------*/
-
-.formGrid {
+.loginForm {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
-  grid-gap: var(--space-3);
+  gap: var(--space-3);
   align-items: end;
   margin-bottom: var(--layout-supporting-gap);
+  font-size: 16px;
+  line-height: 24px;
 }

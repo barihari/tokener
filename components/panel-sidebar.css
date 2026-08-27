@@ -1,37 +1,29 @@
-/* ------------------- Panel Sidebar --------------------------*/
-
-/* ------------------- Menu --------------------------*/
-
 .menuList {
-    margin-top: var(--layout-sidebar-gap);
+  margin-top: var(--layout-sidebar-gap);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .menuItem {
   padding: var(--space-3);
-  border-radius: var(--navigation-item-radius);
+  border-radius: var(--navigation-radius);
 }
-  
+
 .menuItem.active {
-  background-color: var(--navigation-item-active);
-  font-weight: bold;
-}
-
-.menuItem.active:hover {
-  background-color: var(--navigation-item-active);
-}
-  
-.menuItem:not(.active) {
-  cursor: pointer;
-  color: var(--text-body);                                        /*<--- Design Token Alias */
-}
-
-
-.menuItem a {
-  transition: all 0.3 ease 0s;
-  text-decoration: none;
-  color: var(--text-body);                                        /*<--- Design Token Alias */
+  background: var(--navigation-active);
+  font-weight: var(--navigation-active-font-weight);
 }
 
 .menuItem:hover {
-  background-color: var(--navigation-item-hover);
+  background: var(--navigation-hover);
+}
+
+.menuItem.active:hover {
+  background: var(--navigation-active);
+}
+
+.menuItem a {
+  color: var(--text-body);
+  text-decoration: none;
 }

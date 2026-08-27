@@ -1,4 +1,4 @@
-/* Open-source substitute for the original proprietary brand fonts. */
+/* Self-hosting keeps each brand preview independent of third-party font services. */
 @font-face {
   font-family: "Source Sans 3";
   src: url("/assets/fonts/source-sans-3/SourceSans3VF-Upright.woff2") format("woff2-variations");

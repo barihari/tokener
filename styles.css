@@ -1,97 +1,80 @@
+@import "/tokens/space.css?v=16";
+@import "/tokens/font.css?v=16";
+@import "/themes/themes.css?v=16";
 
-/* Design Tokens */
-@import '/tokens/space.css';
-@import '/tokens/font.css?v=5';
-@import '/tokens/textstyle.css';
-@import '/tokens/shadow.css';
-@import '/themes/themes.css?v=5';
-
-/* Components */
-@import '/components/button.css';
-@import '/components/logo.css?v=3';
-@import '/components/avatar.css';
-@import '/components/input.css';
-@import '/components/panel-sidebar.css';
-@import '/components/panel-main.css';
-@import '/components/panel-details.css';
-
-
-/* ------------------- Global --------------------------*/
+@import "/components/button.css?v=16";
+@import "/components/logo.css?v=16";
+@import "/components/avatar.css?v=16";
+@import "/components/input.css?v=16";
+@import "/components/panel-sidebar.css?v=16";
+@import "/components/panel-main.css?v=16";
+@import "/components/panel-details.css?v=16";
+@import "/components/theme-switcher.css?v=16";
 
 *,
-*:before,
-*:after {
-    box-sizing: border-box;
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 8px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-    --fieldBorderWidth: 2px;
+button,
+input,
+select {
+  font: inherit;
 }
 
-
-
-/* ------------------- Layout --------------------------*/
-
-
-.emailWrapper {
-    color: var(--text-body);                                                   /*<--- Design Token Alias */
-    display: grid;
-    grid-template-columns: 17% 52% calc(100% - 17% - 52%);
-    min-height: 100vh;
-    background: var(--surface-light);                                          /*<--- Design Token Alias */
+.appShell {
+  display: grid;
+  grid-template-columns: 17% 52% 31%;
+  min-height: 100vh;
+  background: var(--surface-page);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
 }
 
 .sidebar {
-    border-right: 1px solid var(--grid-border-faint);                          /*<--- Design Token Alias */
-    padding: var(--space-5);
+  padding: var(--space-5);
+  border-right: 1px solid var(--border-muted);
 }
 
 .detailsPanel {
-    border-left: 1px solid var(--grid-border-faint);                            /*<--- Design Token Alias */
-    padding: var(--space-8);
-    background-color: var(--surface-primary-faint);                             /*<--- Design Token Alias */
+  padding: var(--space-8);
+  border-left: 1px solid var(--border-muted);
+  background: var(--surface-panel);
 }
-
-
-
-/* ------------------- Media Query --------------------------*/
-
 
 @media (max-width: 1100px) {
-    .emailWrapper {
-        grid-template-columns: 1fr;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    main {
-        padding-top: 44px;
-        padding-bottom: var(--layout-supporting-gap);
-    }
+  .appShell {
+    grid-template-columns: 1fr;
+  }
 
-    .emails {
-        margin-bottom: 0;
-    }
+  main {
+    padding-top: 44px;
+    padding-bottom: var(--layout-supporting-gap);
+  }
 
-    .formGrid {
-        display: none;
-    }
+  .rateList {
+    margin-bottom: 0;
+  }
 
-    .sidebar {
-        display: none;
-    }
+  .loginForm,
+  .sidebar {
+    display: none;
+  }
 
-    .detailsPanel {
-        width: 100%;
-        border-left: 0;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
+  .detailsPanel {
+    width: 100%;
+    border-left: 0;
+  }
 }
-
-/* ------------------- Utilities --------------------------*/

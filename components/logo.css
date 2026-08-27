@@ -1,16 +1,10 @@
-/* ------------------- Logo --------------------------*/
-
-:root {
-  --brand-logo-frame-height: 56px;
-}
-
 .brandLogo {
+  display: block;
+  width: min(100%, var(--brand-logo-width));
+  height: 56px;
+  margin-bottom: var(--layout-sidebar-gap);
   background-image: var(--brand-logo);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
-  width: min(100%, var(--brand-logo-width));
-  height: var(--brand-logo-frame-height);
-  margin-bottom: var(--layout-sidebar-gap);
 }

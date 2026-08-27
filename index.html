@@ -1,132 +1,145 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <title>Design Tokens Demo</title>
-
-    <script src="theme-switcher.js?v=2"></script>
-    <link href="styles.css?v=13" rel="stylesheet">
-    <link href="components/theme-switcher.css?v=19" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Tokens Demo</title>
+  <script src="theme-switcher.js?v=4"></script>
+  <link href="styles.css?v=16" rel="stylesheet">
 </head>
-
 <body>
-    <div class="emailWrapper">
-        <aside class="sidebar">
-            <div class="brandLogo" role="img" aria-label="Bankrate"></div><button class="button button-primary label-l">New</button>
-            <div class="menuList text-s">
-                <div class="menuItem"><a href="#">First Section</a></div>
-                <div class="menuItem active"><a href="#">Second Section</a></div>
-                <div class="menuItem"><a href="#">Third Section</a></div>
-                <div class="menuItem"><a href="#">Fourth Section</a></div>
-            </div>
-        </aside>
-        <main>
-            <h1 class="title-2-xl">A better rate is waiting</h1>
-            <div class="tabs text-m"><strong class="tab active">First</strong>
-                <div class="tab">Second</div>
-                <div class="tab">Third</div>
-            </div>
-            <div class="searchSection text-s"><input type="text" class="textInput" placeholder="Search"></div>
-            <div class="post">
-                <div class="postLeft">
-                    <div class="avatar postAvatar"></div>
-                </div>
-                <div class="postMain">
-                    <div class="postAuthor context">Set a financial goal</div>
-                    <div class="postContent text-m">Among U.S. adults, 45% have paid off debt they once considered
-                        unmanageable, while 23% have reached goals like saving or investing.</div>
-                    <div class="postDate text-s">Recent data from <a class="link"
-                            href="https://www.experian.com/blogs/ask-experian/experian-debt-relief-initiative/">Experian</a>
-                    </div>
-                </div>
-            </div>
-            <div class="emails text-s">
-                <div class="email">
-                    <div class="listCell">Fixed Rate</div>
-                    <div class="listCell">The interest rate on the loan will stay the same throughout the loan term.
-                    </div>
-                </div>
-                <div class="email">
-                    <div class="listCell">Adjustable Rate</div>
-                    <div class="listCell">The interest rate will fluctuate based on a market index plus a lender margin
-                    </div>
-                </div>
-                <div class="email">
-                    <div class="listCell">Interest Only</div>
-                    <div class="listCell">Keep your payments down for a period of time.</div>
-                </div>
-            </div>
-            <div class="formGrid text-s">
-                <div><label>Email</label><input type="text" class="textInput" value="email@example.com"></div>
-                <div><label>Password</label><input type="password" class="textInput" value="123456789"></div><button
-                    class="button button-outline label-l">Log in</button>
-            </div>
-        </main>
-        <aside class="detailsPanel">
-            <div class="userCard">
-                <div class="avatar userCardAvatar"></div>
-                <div class="userCardInfo">
-                    <div class="userCardName text-s">Saleena Beharry</div>
-                    <div class="userCardHandle text-xs">@bari_hari</div>
-                </div><button class="button button-outline label-s">Follow</button>
-            </div>
-            <div class="highlightCard ">
-                <div class="highlightCardInfo text-s"><strong>See how much you could save.</strong><br>Start your
-                    application now.</div>
-                <div class="highlightCardAvatars">
-                    <div class="highlightCardAvatar"></div>
-                    <div class="highlightCardAvatar"></div>
-                    <div class="highlightCardAvatar"></div>
-                </div>
-            </div>
-            <div class="chartCard">
-                <div class="chart">
-                    <div class="data">
-                        <div class="dataTitle context">Data</div>
-                        <div class="dataNumber text-xl"><span class="dataSymbol">$</span><strong>731</strong></div>
-                    </div><svg class="dataStroke" viewBox="0 0 172 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 31L14.2951 28.4192C15.6894 28.1485 17.1344 28.3813 18.3732 29.0759L25.6071 33.1326C28.8826 34.9695 33.0214 33.3799 34.2252 29.8227L41.5807 8.08787C43.4304 2.62227 51.175 2.66282 52.9673 8.14749L59.5625 28.3291C61.0033 32.7381 66.6882 33.9146 69.7607 30.4397L75.4172 24.0421C77.1235 22.1123 79.8713 21.487 82.2446 22.4884L88.2045 25.0031C91.2555 26.2904 94.7754 24.8726 96.1588 21.8639C99.6048 14.3691 105.859 1.75955 109.182 1.16666C113.743 0.352774 123.828 13.9035 124.591 14.9377C124.624 14.9837 124.653 15.0235 124.685 15.0706L135.49 30.8019C137.776 34.1299 142.63 34.2958 145.138 31.1316L154.496 19.3246C155.182 18.4584 156.095 17.7986 157.132 17.4181L171 12.3333">
-                        </path>
-                    </svg>
-                </div>
-                <div class="chart">
-                    <div class="data">
-                        <div class="dataTitle context">Data</div>
-                        <div class="dataNumber text-xl"><span class="dataSymbol">$</span><strong>294</strong></div>
-                    </div><svg class="dataStroke" viewBox="0 0 172 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 22L13.3569 13.2048C15.2481 11.8587 17.7461 11.7243 19.7709 12.8598L27.2149 17.0342C29.8858 18.5321 33.2561 17.7782 35.0344 15.2852L43.27 3.73918C45.4164 0.729889 49.7472 0.35847 52.3748 2.95832L62.1256 12.6064C62.5843 13.0603 62.9668 13.5852 63.2583 14.1609L73.3924 34.1745C75.5192 38.3746 81.4338 38.601 83.8754 34.5757L91.1421 22.5954C92.6407 20.1247 95.6875 19.0732 98.3909 20.0936L107.636 23.5831C108.648 23.965 109.741 24.0642 110.809 23.8936C114.344 23.3293 119.467 22.6566 122.382 22.2841C123.836 22.0983 125.172 21.3935 126.142 20.295L135.226 10.0084C137.739 7.16297 142.23 7.3369 144.515 10.3681L154.071 23.0447C155.016 24.298 156.415 25.1312 157.967 25.3656L171 27.3333">
-                        </path>
-                    </svg>
-                </div>
-            </div>
-            <div class="detailsCard">
-                <div class="detailsLabel context">Refinance</div>
-                <div class="detailsTitle text-l">How and why to refinance your mortgage</div>
-                <div class="detailsBlurb text-s">With mortgage rates still historically low, it can make sense to
-                    refinance your loan. Here’s what you need to know about the process.</div>
-                <div class="detailsActions"><button class="button button-primary label-l">Save</button><button
-                        class="button button-outline label-l">Cancel</button></div>
-            </div>
-        </aside>
-    </div>
-    <div class="themeSwitcher" role="group" aria-label="Choose a brand theme">
-        <span class="themeSwitcherLabel">Theme</span>
-        <button class="themeOption" type="button" data-theme-option="bankrate" aria-pressed="true">Bankrate</button>
-        <button class="themeOption" type="button" data-theme-option="capital-one" aria-pressed="false">Capital One</button>
-        <button class="themeOption" type="button" data-theme-option="sage" aria-pressed="false">Sage</button>
-        <span class="mobileThemeLabel" aria-hidden="true">Theme:</span>
-        <select class="themeSelect" aria-label="Choose a brand theme">
-            <option value="bankrate">Bankrate</option>
-            <option value="capital-one">Capital One</option>
-            <option value="sage">Sage</option>
-        </select>
-    </div>
-</body>
+  <div class="appShell">
+    <aside class="sidebar">
+      <div class="brandLogo" role="img" aria-label="Bankrate"></div>
+      <button class="button button-primary" type="button">New</button>
+      <nav class="menuList" aria-label="Sections">
+        <div class="menuItem"><a href="#">First Section</a></div>
+        <div class="menuItem active"><a href="#" aria-current="page">Second Section</a></div>
+        <div class="menuItem"><a href="#">Third Section</a></div>
+        <div class="menuItem"><a href="#">Fourth Section</a></div>
+      </nav>
+    </aside>
 
+    <main>
+      <h1>A better rate is waiting</h1>
+      <div class="tabs">
+        <strong class="tab active">First</strong>
+        <div class="tab">Second</div>
+        <div class="tab">Third</div>
+      </div>
+
+      <div class="searchSection">
+        <input type="text" class="textInput" aria-label="Search" placeholder="Search">
+      </div>
+
+      <section class="goalCard" aria-label="Financial goal data">
+        <div class="avatar goalCardAvatar"></div>
+        <div>
+          <div class="goalCardLabel">Set a financial goal</div>
+          <div class="goalCardText">Among U.S. adults, 45% have paid off debt they once considered unmanageable,
+            while 23% have reached goals like saving or investing.</div>
+          <div class="goalCardSource">Recent data from <a
+              href="https://www.experian.com/blogs/ask-experian/experian-debt-relief-initiative/">Experian</a></div>
+        </div>
+      </section>
+
+      <div class="rateList">
+        <div class="rateRow">
+          <div class="rateCell">Fixed Rate</div>
+          <div class="rateCell">The interest rate on the loan will stay the same throughout the loan term.</div>
+        </div>
+        <div class="rateRow">
+          <div class="rateCell">Adjustable Rate</div>
+          <div class="rateCell">The interest rate will fluctuate based on a market index plus a lender margin</div>
+        </div>
+        <div class="rateRow">
+          <div class="rateCell">Interest Only</div>
+          <div class="rateCell">Keep your payments down for a period of time.</div>
+        </div>
+      </div>
+
+      <form class="loginForm">
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" class="textInput" value="email@example.com">
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" class="textInput" value="123456789">
+        </div>
+        <button class="button button-outline" type="button">Log in</button>
+      </form>
+    </main>
+
+    <aside class="detailsPanel">
+      <div class="userCard">
+        <div class="avatar userCardAvatar"></div>
+        <div>
+          <div class="userCardName">Saleena Beharry</div>
+          <div class="userCardHandle">@bari_hari</div>
+        </div>
+        <button class="button button-outline button-small" type="button">Follow</button>
+      </div>
+
+      <div class="highlightCard">
+        <div class="highlightCardInfo"><strong>See how much you could save.</strong><br>Start your application now.</div>
+        <div class="highlightCardAvatars">
+          <div class="highlightCardAvatar"></div>
+          <div class="highlightCardAvatar"></div>
+          <div class="highlightCardAvatar"></div>
+        </div>
+      </div>
+
+      <div class="chartCard">
+        <div class="chart">
+          <div class="data">
+            <div class="dataTitle">Data</div>
+            <div class="dataNumber"><span class="dataSymbol">$</span><strong>731</strong></div>
+          </div>
+          <svg class="dataStroke" viewBox="0 0 172 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" focusable="false">
+            <path
+              d="M1 31L14.2951 28.4192C15.6894 28.1485 17.1344 28.3813 18.3732 29.0759L25.6071 33.1326C28.8826 34.9695 33.0214 33.3799 34.2252 29.8227L41.5807 8.08787C43.4304 2.62227 51.175 2.66282 52.9673 8.14749L59.5625 28.3291C61.0033 32.7381 66.6882 33.9146 69.7607 30.4397L75.4172 24.0421C77.1235 22.1123 79.8713 21.487 82.2446 22.4884L88.2045 25.0031C91.2555 26.2904 94.7754 24.8726 96.1588 21.8639C99.6048 14.3691 105.859 1.75955 109.182 1.16666C113.743 0.352774 123.828 13.9035 124.591 14.9377C124.624 14.9837 124.653 15.0235 124.685 15.0706L135.49 30.8019C137.776 34.1299 142.63 34.2958 145.138 31.1316L154.496 19.3246C155.182 18.4584 156.095 17.7986 157.132 17.4181L171 12.3333">
+            </path>
+          </svg>
+        </div>
+        <div class="chart">
+          <div class="data">
+            <div class="dataTitle">Data</div>
+            <div class="dataNumber"><span class="dataSymbol">$</span><strong>294</strong></div>
+          </div>
+          <svg class="dataStroke" viewBox="0 0 172 39" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" focusable="false">
+            <path
+              d="M1 22L13.3569 13.2048C15.2481 11.8587 17.7461 11.7243 19.7709 12.8598L27.2149 17.0342C29.8858 18.5321 33.2561 17.7782 35.0344 15.2852L43.27 3.73918C45.4164 0.729889 49.7472 0.35847 52.3748 2.95832L62.1256 12.6064C62.5843 13.0603 62.9668 13.5852 63.2583 14.1609L73.3924 34.1745C75.5192 38.3746 81.4338 38.601 83.8754 34.5757L91.1421 22.5954C92.6407 20.1247 95.6875 19.0732 98.3909 20.0936L107.636 23.5831C108.648 23.965 109.741 24.0642 110.809 23.8936C114.344 23.3293 119.467 22.6566 122.382 22.2841C123.836 22.0983 125.172 21.3935 126.142 20.295L135.226 10.0084C137.739 7.16297 142.23 7.3369 144.515 10.3681L154.071 23.0447C155.016 24.298 156.415 25.1312 157.967 25.3656L171 27.3333">
+            </path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="detailsCard">
+        <div class="detailsLabel">Refinance</div>
+        <div class="detailsTitle">How and why to refinance your mortgage</div>
+        <div class="detailsBlurb">With mortgage rates still historically low, it can make sense to refinance your
+          loan. Here’s what you need to know about the process.</div>
+        <div class="detailsActions">
+          <button class="button button-primary" type="button">Save</button>
+          <button class="button button-outline" type="button">Cancel</button>
+        </div>
+      </div>
+    </aside>
+    </div>
+  <div class="themeSwitcher" role="group" aria-label="Choose a brand theme">
+    <span class="themeSwitcherLabel">Theme</span>
+    <button class="themeOption" type="button" data-theme-option="bankrate" aria-pressed="true">Bankrate</button>
+    <button class="themeOption" type="button" data-theme-option="capital-one" aria-pressed="false">Capital One</button>
+    <button class="themeOption" type="button" data-theme-option="sage" aria-pressed="false">Sage</button>
+    <span class="mobileThemeLabel" aria-hidden="true">Theme:</span>
+    <select class="themeSelect" aria-label="Choose a brand theme">
+      <option value="bankrate">Bankrate</option>
+      <option value="capital-one">Capital One</option>
+      <option value="sage">Sage</option>
+    </select>
+  </div>
+</body>
 </html>

@@ -48,12 +48,12 @@
 }
 
 .themeOption[aria-pressed="true"] {
-  background: var(--brand-brand);
+  background: var(--brand-accent);
   color: #ffffff;
 }
 
 .themeOption:focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--brand-brand) 35%, transparent);
+  outline: 3px solid color-mix(in srgb, var(--brand-accent) 35%, transparent);
   outline-offset: 2px;
 }
 
@@ -128,7 +128,7 @@
   }
 
   .themeSelect:focus-visible {
-    outline: 3px solid color-mix(in srgb, var(--brand-brand) 35%, transparent);
+    outline: 3px solid color-mix(in srgb, var(--brand-accent) 35%, transparent);
     outline-offset: 2px;
   }
 }

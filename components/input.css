@@ -1,25 +1,16 @@
-/* ------------------- Input --------------------------*/
+.textInput {
+  width: 100%;
+  height: var(--field-height);
+  margin-top: var(--space-1);
+  padding: 0 var(--field-padding-x);
+  border: 2px solid var(--border-field);
+  border-radius: var(--field-radius);
+  outline: none;
+  background: transparent;
+  color: inherit;
+  transition: border-color 200ms ease;
+}
 
-  input[type=text], input[type=password]  {
-    height: var(--field-height);
-    padding: 0 var(--field-padding-x);
-    width: 100%;
-    font: inherit;
-    color: inherit;
-    background-color: transparent; 
-    box-sizing: border-box;
-    border: var(--fieldBorderWidth) solid var(--grid-border-subtle);               /*<--- Design Token Alias */
-    border-radius: var(--field-radius);
-    outline: none;
-    margin-top: var(--space-1);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  input[type=text]:focus {
-    border: var(--fieldBorderWidth) solid var(--color-primary-500);                /*<--- Design Token */
-  }
-
-  input[type=password]:focus {
-    border: var(--fieldBorderWidth) solid var(--color-primary-500);                /*<--- Design Token */
-  }
+.textInput:focus {
+  border-color: var(--field-focus);
+}
