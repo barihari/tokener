@@ -7,6 +7,7 @@
 
     <title>Design Tokens Demo</title>
 
+    <script src="theme-switcher.js"></script>
     <link href="styles.css" rel="stylesheet">
 
 </head>
@@ -14,7 +15,7 @@
 <body>
     <div class="emailWrapper">
         <aside class="sidebar">
-            <div class="logo-1"></div><button class="button button-primary label-l">New</button>
+            <div class="brandLogo" role="img" aria-label="Bankrate"></div><button class="button button-primary label-l">New</button>
             <div class="menuList text-s">
                 <div class="menuItem"><a href="#">First Section</a></div>
                 <div class="menuItem active"><a href="#">Second Section</a></div>
@@ -110,6 +111,12 @@
                         class="button button-outline label-l">Cancel</button></div>
             </div>
         </aside>
+    </div>
+    <div class="themeSwitcher" role="group" aria-label="Choose a brand theme">
+        <span class="themeSwitcherLabel">Theme</span>
+        <button class="themeOption" type="button" data-theme-option="bankrate" aria-pressed="true">Bankrate</button>
+        <button class="themeOption" type="button" data-theme-option="capital-one" aria-pressed="false">Capital One</button>
+        <button class="themeOption" type="button" data-theme-option="sage" aria-pressed="false">Sage</button>
     </div>
 </body>
 

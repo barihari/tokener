@@ -1,6 +1,6 @@
 .context {
-  font-family: CircularStd-Black, serif;
-  font-weight: 900;
+  font-family: var(--font-label);
+  font-weight: var(--font-weight-context);
   font-size: 14px;
   line-height: 0.86;
   letter-spacing: 1.5px;
@@ -8,107 +8,107 @@
 }
 
 .label-l {
-  font-family: CircularStd-Bold, serif;
-  font-weight: 700;
+  font-family: var(--font-label);
+  font-weight: var(--font-weight-label);
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.5px;
 }
 
 .label-m {
-  font-family: CircularStd-Bold, serif;
-  font-weight: 700;
+  font-family: var(--font-label);
+  font-weight: var(--font-weight-label);
   font-size: 16px;
   line-height: 1;
 }
 
 .label-s {
-  font-family: CircularStd-Bold, serif;
-  font-weight: 700;
+  font-family: var(--font-label);
+  font-weight: var(--font-weight-label);
   font-size: 12px;
   line-height: 1.33;
 }
 
 .text-2-xl {
-  font-family: CircularStd-Book, serif;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
   font-size: 45px;
   line-height: 1.24;
 }
 
 .text-l {
-  font-family: CircularStd-Bold, serif;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-emphasis);
   font-size: 24px;
   line-height: 1.33;
 }
 
 .text-m {
-  font-family: CircularStd-Book, serif;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
   font-size: 20px;
   line-height: 1.6;
 }
 
 .text-s {
-  font-family: CircularStd-Book, serif;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
   font-size: 16px;
   line-height: 1.5;
 }
 
 .text-xl {
-  font-family: CircularStd-Book, serif;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
   font-size: 40px;
   line-height: 1.4;
 }
 
 .text-xs {
-  font-family: CircularStd-Book, serif;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
   font-size: 11px;
   line-height: 1.45;
 }
 
 .title-2-xl {
-  font-family: DMSerifDisplay-Regular, serif;
-  font-weight: 400;
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-size: 45px;
   line-height: 1.24;
 }
 
 .title-l {
-  font-family: DMSerifDisplay-Regular, serif;
-  font-weight: 400;
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-size: 24px;
   line-height: 1.33;
 }
 
 .title-m {
-  font-family: DMSerifDisplay-Regular, serif;
-  font-weight: 400;
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-size: 20px;
   line-height: 1.6;
 }
 
 .title-s {
-  font-family: DMSerifDisplay-Regular, serif;
-  font-weight: 400;
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-size: 16px;
   line-height: 1.5;
 }
 
 .title-xl {
-  font-family: DMSerifDisplay-Regular, serif;
-  font-weight: 400;
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-size: 40px;
   line-height: 1.4;
 }
 
 .title-xs {
-  font-family: DMSerifDisplay-Regular, serif;
-  font-weight: 400;
+  font-family: var(--font-title);
+  font-weight: var(--font-weight-title);
   font-size: 11px;
   line-height: 1.45;
 }

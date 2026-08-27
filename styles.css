@@ -4,10 +4,10 @@
 @import '/tokens/space.css';
 @import '/tokens/font.css';
 @import '/tokens/textstyle.css';
-@import '/tokens/font.css';
 @import '/tokens/shadow.css';
 @import '/assets/images.css';
 @import '/assets/icons.css';
+@import '/themes/themes.css';
 
 /* Components */
 @import '/components/button.css';
@@ -17,6 +17,7 @@
 @import '/components/panel-sidebar.css';
 @import '/components/panel-main.css';
 @import '/components/panel-details.css';
+@import '/components/theme-switcher.css';
 
 
 /* ------------------- Global --------------------------*/
@@ -92,6 +93,5 @@ body {
 }
 
 /* ------------------- Utilities --------------------------*/
-
 
 

@@ -1,31 +1,8 @@
+/* Open-source substitute for the original proprietary brand fonts. */
 @font-face {
-  font-family: "CircularStd-Black";
-  src: url("CircularStd-Black.woff2") format("woff2"),
-    url("CircularStd-Black.woff") format("woff");
-  font-weight: 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CircularStd-Bold";
-  src: url("CircularStd-Bold.woff2") format("woff2"),
-    url("CircularStd-Bold.woff") format("woff");
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "CircularStd-Book";
-  src: url("CircularStd-Book.woff2") format("woff2"),
-    url("CircularStd-Book.woff") format("woff");
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "DMSerifDisplay-Regular";
-  src: url("DMSerifDisplay-Regular.woff2") format("woff2"),
-    url("DMSerifDisplay-Regular.woff") format("woff");
-  font-weight: 400;
+  font-family: "Source Sans 3";
+  src: url("/assets/fonts/source-sans-3/SourceSans3VF-Upright.woff2") format("woff2-variations");
+  font-style: normal;
+  font-weight: 200 900;
   font-display: swap;
 }

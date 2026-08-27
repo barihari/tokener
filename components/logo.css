@@ -10,26 +10,13 @@
 
 
 
-.logo-1 { 
-  background: url("/assets/logo/logo-br.png") no-repeat; 
-  width: 100%; 
-  height: 35px; 
-  display: block; 
-  margin-bottom: var(--space-7);
-}
-
-.logo-2 { 
-  background: url("/assets/logo/logo-cap1.png") no-repeat; 
-  width: 100%; 
-  height: 45px; 
-  display: block; 
-  margin-bottom: var(--space-7);
-}
-
-.logo-3 { 
-  background: url("/assets/logo/logo-sg.png") no-repeat; 
-  width: 100%; 
-  height: 55px; 
-  display: block; 
+.brandLogo {
+  background-image: var(--brand-logo);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: min(100%, var(--brand-logo-width));
+  height: var(--brand-logo-height);
   margin-bottom: var(--space-7);
 }
