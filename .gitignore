@@ -14,7 +14,18 @@ creds.js
  
 # Mac/OSX
 .DS_Store
- 
+*.icloud
+
+# iCloud conflict copies
+index [0-9]*.html
+styles [0-9]*.css
+theme-switcher [0-9]*.js
+README [0-9]*.md
+components/* [0-9]*.css
+themes/* [0-9]*.css
+tokens/* [0-9]*.css
+* (conflicted copy *).*
+
 # Environments
 .env
 .venv
