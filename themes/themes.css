@@ -4,7 +4,6 @@
   /* Brand */
   --brand-logo: url("/assets/logo/br-wordmark-rebrand.svg");
   --brand-logo-width: 176px;
-  --brand-logo-text: "";
   --brand-accent: #0157ff;
 
   /* Typography */
@@ -129,7 +128,7 @@
 }
 
 :root[data-theme="capital-one"] {
-  --brand-logo: url("/assets/logo/logo-cap1.png");
+  --brand-logo: url("/assets/logo/logo-cap1.svg");
   --brand-logo-width: 140px;
   --brand-accent: #2d739d;
 
@@ -228,7 +227,7 @@
 }
 
 :root[data-theme="sage"] {
-  --brand-logo: url("/assets/logo/logo-sg.png");
+  --brand-logo: url("/assets/logo/logo-sg.svg");
   --brand-logo-width: 150px;
   --brand-accent: #3f7a48;
 
@@ -324,14 +323,8 @@
 
 :root[data-theme="vanguard"] {
   /* FF Mark is proprietary; Manrope is the bundled open-source substitute. */
-  --brand-logo: none;
+  --brand-logo: url("/assets/logo/logo-vanguard.svg");
   --brand-logo-width: 160px;
-  --brand-logo-text: "Vanguard";
-  --brand-logo-text-color: #96151d;
-  --brand-logo-text-font-family: Georgia, "Times New Roman", serif;
-  --brand-logo-text-font-size: 27px;
-  --brand-logo-text-font-weight: 700;
-  --brand-logo-text-letter-spacing: -1.2px;
   --brand-accent: #c20029;
 
   --font-body: "Manrope", system-ui, sans-serif;
