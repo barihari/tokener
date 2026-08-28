@@ -1,6 +1,6 @@
 # Tokener
 
-A static design-token demo with switchable Bankrate, Capital One, and Sage Mortgage themes.
+A static design-token demo with switchable Bankrate, Capital One, Sage Mortgage, and Vanguard themes.
 
 ## Run locally
 

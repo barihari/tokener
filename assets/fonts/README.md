@@ -8,5 +8,6 @@ The open-source fonts are self-hosted under the SIL Open Font License 1.1. Recif
 - Geist: Vercel, used for Sage body text.
 - DM Sans: Google Fonts, used for Sage labels and controls.
 - Libre Baskerville: Google Fonts, used for Sage display titles.
+- Manrope: Google Fonts, used as the open-source substitute for Vanguard's proprietary FF Mark typeface.
 
 The matching open-source licence is stored beside each open-source font family.

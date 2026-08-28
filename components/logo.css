@@ -8,3 +8,13 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.brandLogo::after {
+  color: var(--brand-logo-text-color, transparent);
+  content: var(--brand-logo-text, "");
+  font-family: var(--brand-logo-text-font-family, Georgia, serif);
+  font-size: var(--brand-logo-text-font-size, 28px);
+  font-weight: var(--brand-logo-text-font-weight, 700);
+  line-height: 56px;
+  letter-spacing: var(--brand-logo-text-letter-spacing, -1px);
+}

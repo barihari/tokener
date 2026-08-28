@@ -2,7 +2,8 @@
   const themeNames = {
     bankrate: "Bankrate",
     "capital-one": "Capital One",
-    sage: "Sage Mortgage"
+    sage: "Sage Mortgage",
+    vanguard: "Vanguard"
   };
   const storageKey = "tokener-theme";
   const savedTheme = window.localStorage.getItem(storageKey);

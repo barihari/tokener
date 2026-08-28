@@ -1,5 +1,13 @@
 /* Self-hosting keeps each brand preview independent of third-party font services. */
 @font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/manrope/Manrope-Variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Source Sans 3";
   src: url("/assets/fonts/source-sans-3/SourceSans3VF-Upright.woff2") format("woff2-variations");
   font-style: normal;

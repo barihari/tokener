@@ -1,15 +1,15 @@
-@import "/tokens/space.css?v=16";
-@import "/tokens/font.css?v=16";
-@import "/themes/themes.css?v=16";
+@import "/tokens/space.css?v=20";
+@import "/tokens/font.css?v=20";
+@import "/themes/themes.css?v=20";
 
-@import "/components/button.css?v=16";
-@import "/components/logo.css?v=16";
-@import "/components/avatar.css?v=16";
-@import "/components/input.css?v=16";
-@import "/components/panel-sidebar.css?v=16";
-@import "/components/panel-main.css?v=16";
-@import "/components/panel-details.css?v=16";
-@import "/components/theme-switcher.css?v=16";
+@import "/components/button.css?v=20";
+@import "/components/logo.css?v=20";
+@import "/components/avatar.css?v=20";
+@import "/components/input.css?v=20";
+@import "/components/panel-sidebar.css?v=20";
+@import "/components/panel-main.css?v=20";
+@import "/components/panel-details.css?v=20";
+@import "/components/theme-switcher.css?v=20";
 
 *,
 *::before,

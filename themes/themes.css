@@ -4,6 +4,7 @@
   /* Brand */
   --brand-logo: url("/assets/logo/br-wordmark-rebrand.svg");
   --brand-logo-width: 176px;
+  --brand-logo-text: "";
   --brand-accent: #0157ff;
 
   /* Typography */
@@ -318,5 +319,115 @@
   --field-padding-x: 16px;
   --field-radius: 8px;
   --surface-radius: 16px;
+  --surface-shadow: none;
+}
+
+:root[data-theme="vanguard"] {
+  /* FF Mark is proprietary; Manrope is the bundled open-source substitute. */
+  --brand-logo: none;
+  --brand-logo-width: 160px;
+  --brand-logo-text: "Vanguard";
+  --brand-logo-text-color: #96151d;
+  --brand-logo-text-font-family: Georgia, "Times New Roman", serif;
+  --brand-logo-text-font-size: 27px;
+  --brand-logo-text-font-weight: 700;
+  --brand-logo-text-letter-spacing: -1.2px;
+  --brand-accent: #c20029;
+
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-title: "Manrope", system-ui, sans-serif;
+  --font-weight-body: 400;
+  --font-weight-emphasis: 700;
+  --font-weight-title: 700;
+
+  --eyebrow-font-family: "Manrope", system-ui, sans-serif;
+  --eyebrow-font-size: 13px;
+  --eyebrow-font-weight: 700;
+  --eyebrow-letter-spacing: 1.2px;
+  --eyebrow-line-height: 20px;
+  --eyebrow-text-transform: uppercase;
+  --eyebrow-stack-gap: 12px;
+
+  --goal-label-padding-top: 14px;
+  --goal-label-font-size: 14px;
+  --goal-label-font-weight: 700;
+  --goal-label-line-height: 20px;
+  --details-label-font-size: 13px;
+  --details-label-line-height: 20px;
+  --details-blurb-font-size: 17px;
+  --details-blurb-line-height: 25.5px;
+
+  --text-body: #040505;
+  --text-muted: #3f4444;
+  --text-link: #145bff;
+  --text-link-hover: #0c42c7;
+  --surface-muted: #f5f6f6;
+  --surface-panel: #fff7f8;
+  --surface-accent: #c20029;
+  --avatar-surface: #e8e9e9;
+  --highlight-avatar-surface: #ff9daf;
+  --border-strong: #717777;
+  --border-muted: #e8e9e9;
+  --border-field: #717777;
+  --field-focus: #145bff;
+  --row-hover: #f5f6f6;
+
+  --link-font-weight: 700;
+  --link-text-decoration: underline;
+
+  --button-surface-primary: #c20029;
+  --button-hover-primary: #970020;
+  --button-outline-border: #040505;
+  --button-hover-outline: #f5f6f6;
+  --button-text-outline: #040505;
+  --button-height-small: 40px;
+  --button-font-family: "Manrope", system-ui, sans-serif;
+  --button-font-size: 17px;
+  --button-font-size-small: 14px;
+  --button-font-weight: 700;
+  --button-font-weight-small: 700;
+  --button-line-height: 24px;
+  --button-line-height-small: 20px;
+  --button-outline-width: 2px;
+  --button-padding-x: 28px;
+  --button-padding-x-small: 16px;
+  --button-radius: 80px;
+  --button-radius-small: 80px;
+
+  --navigation-active: #f5f6f6;
+  --navigation-hover: #f5f6f6;
+  --navigation-radius: 0;
+
+  --tab-font-family: "Manrope", system-ui, sans-serif;
+  --tab-font-size: 17px;
+  --tab-line-height: 24px;
+  --tab-font-weight: 400;
+  --tab-active-font-weight: 700;
+  --tab-color: #717777;
+  --tab-active-color: #040505;
+  --tab-indicator-color: #c20029;
+  --tab-indicator-width: 3px;
+  --tab-item-gap: 24px;
+  --tab-padding-bottom: 8px;
+
+  --layout-heading-gap: 32px;
+  --layout-tab-gap: 24px;
+  --layout-section-gap: 40px;
+  --layout-supporting-gap: 32px;
+  --layout-form-gap: 40px;
+  --layout-card-gap: 16px;
+  --layout-sidebar-gap: 32px;
+  --details-title-gap: 12px;
+  --details-action-gap: 24px;
+
+  --list-font-family: "Manrope", system-ui, sans-serif;
+  --list-label-font-family: "Manrope", system-ui, sans-serif;
+  --list-label-font-weight: 700;
+  --list-row-padding-y: 16px;
+  --list-column-gap: 24px;
+
+  --field-padding-x: 16px;
+  --field-radius: 0;
+  --surface-radius: 12px;
   --surface-shadow: none;
 }
